@@ -1,31 +1,33 @@
 import React from 'react';
-import { X, Sparkles } from 'lucide-react';
+import { X } from 'lucide-react';
 import WaitlistForm from './WaitlistForm';
 
 export default function WaitlistModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fade-in">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/40 backdrop-blur-xs animate-fade-in"
+      onClick={onClose}
+    >
       <div 
-        className="relative w-full max-w-lg bg-[#0B0D15] border border-indigo-500/40 rounded-2xl p-6 sm:p-8 shadow-2xl shadow-indigo-950/70"
+        className="relative w-full max-w-lg bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 transition-colors"
+          className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-700 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
 
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold mb-3">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">
             <span>Pioneer Early Access Cohort</span>
           </div>
-          <h3 className="text-2xl font-extrabold text-white">Join the Priority Queue</h3>
-          <p className="text-slate-400 text-xs sm:text-sm mt-1">
-            Unlock 3 months free Pro access, grandfathered 50% discount, and private beta priority.
+          <h3 className="text-xl font-bold text-slate-900">Request Priority Access</h3>
+          <p className="text-slate-600 text-xs sm:text-sm mt-1">
+            Unlock 3 months complimentary access, grandfathered 50% discount, and private beta priority.
           </p>
         </div>
 

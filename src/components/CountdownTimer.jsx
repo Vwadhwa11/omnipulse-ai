@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 export default function CountdownTimer() {
-  // Launch targeted for 45 days from current date
   const [timeLeft, setTimeLeft] = useState({
     days: 42,
     hours: 14,
@@ -37,22 +36,21 @@ export default function CountdownTimer() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="text-xs font-semibold tracking-widest text-indigo-400 uppercase mb-3 flex items-center gap-2">
-        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-        <span>Public Beta Launch Countdown</span>
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-700 mb-3">
+        <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>Targeted Public Beta Rollout</span>
       </div>
       
-      <div className="grid grid-cols-4 gap-2.5 sm:gap-4 max-w-md w-full">
+      <div className="grid grid-cols-4 gap-2.5 sm:gap-3.5 max-w-sm w-full">
         {timeUnits.map((unit, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center p-3 sm:p-4 rounded-xl bg-slate-900/80 border border-slate-800/80 shadow-lg shadow-indigo-950/20 backdrop-blur-md relative overflow-hidden group hover:border-indigo-500/40 transition-all duration-300"
+            className="flex flex-col items-center p-3 sm:p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm"
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <span className="text-2xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-300 font-mono tracking-tight">
+            <span className="text-2xl sm:text-3xl font-bold text-slate-900 font-mono tracking-tight">
               {unit.value}
             </span>
-            <span className="text-[10px] sm:text-xs font-semibold text-slate-400 tracking-wider mt-1">
+            <span className="text-[10px] font-semibold text-slate-500 tracking-wider mt-0.5">
               {unit.label}
             </span>
           </div>

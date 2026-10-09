@@ -14,7 +14,6 @@ export default function App() {
   const [isWaitlistModalOpen, setIsWaitlistModalOpen] = useState(false);
 
   const handleOpenWaitlist = () => {
-    // If on screen with #waitlist-form, can either scroll there or open modal
     const formElement = document.getElementById('waitlist-form');
     if (formElement && window.scrollY > 400) {
       setIsWaitlistModalOpen(true);
@@ -26,7 +25,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#07090E] text-slate-100 flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-white text-slate-900 flex flex-col font-sans selection:bg-slate-900 selection:text-white">
       {/* Top Navbar */}
       <Navbar onOpenWaitlist={handleOpenWaitlist} />
 
