@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/portfolio",
+      "destination": "/portfolio/index.html"
+    },
+    {
+      "source": "/portfolio/",
+      "destination": "/portfolio/index.html"
+    },
+    {
+      "source": "/portfolio/resume",
+      "destination": "/portfolio/resume.pdf"
+    },
+    {
+      "source": "/resume",
+      "destination": "/resume.pdf"
+    }
+  ]
+}

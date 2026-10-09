@@ -71,11 +71,11 @@ export default function Footer({ onOpenWaitlist }) {
           <div>
             <h4 className="font-semibold text-slate-900 uppercase tracking-wider text-[11px] mb-3">Resources</h4>
             <ul className="space-y-2 text-xs">
+              <li><a href="/portfolio" className="hover:text-slate-900 transition-colors font-medium text-slate-900">Portfolio & Resume ↗</a></li>
               <li><a href="#roi-calc" className="hover:text-slate-900 transition-colors">ROI Calculator</a></li>
               <li><a href="#comparison" className="hover:text-slate-900 transition-colors">Why OmniPulse</a></li>
               <li><a href="#faq" className="hover:text-slate-900 transition-colors">Product FAQ</a></li>
               <li><span className="text-slate-400 cursor-not-allowed">API Docs (Beta)</span></li>
-              <li><span className="text-slate-400 cursor-not-allowed">Agency Guide</span></li>
             </ul>
           </div>
 

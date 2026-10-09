@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vaibhav Wadhwa — AI Software Engineer, GenAI/LLM Researcher & Full Stack Developer" />
+  <meta name="keywords" content="Vaibhav Wadhwa, AI Engineer, GenAI, LLMs, MCP, RAG, Machine Learning, Python, Full Stack" />
+  <meta name="author" content="Vaibhav Wadhwa" />
+  <title>Vaibhav Wadhwa · AI Software Engineer &amp; Full Stack Developer</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vaibhav Wadhwa · AI Software Engineer" />
+  <meta property="og:description" content="AI Software Engineer specializing in Agentic AI, MCP, LLMs, RAG, and scalable full-stack architectures." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vwadhwa02.github.io/Portfolio/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Top Announcement / Status Bar ── -->
+  <div class="top-bar">
+    <div class="top-bar__inner">
+      <span class="status-indicator"></span>
+      <span>Currently building AI agents @ <strong>Magicbook Technologies</strong> (Portugal)</span>
+      <span class="top-bar__divider">|</span>
+      <a href="#api-hub" class="top-bar__link">Explore Live Internal APIs &amp; Tools →</a>
+    </div>
+  </div>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-symbol">&lt;VW/&gt;</span>
+        <span class="nav__logo-name">Vaibhav Wadhwa</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#api-hub" class="nav__link-highlight">Internal APIs <span class="badge-new">NEW</span></a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__cta-wrap">
+        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn--sm btn--outline" aria-label="Resume PDF"><i class="fa-solid fa-file-pdf"></i> Resume</a>
+        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#contact" class="btn btn--sm btn--primary">Get In Touch</a>
+      </div>
+
+      <button class="nav__burger" aria-label="Toggle navigation menu" aria-expanded="false" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul role="list">
+      <li><a href="resume.pdf" target="_blank" class="mobile-link"><i class="fa-solid fa-file-pdf"></i> View Resume (PDF)</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#api-hub" class="mobile-link">Internal APIs Hub</a></li>
+      <li><a href="#achievements" class="mobile-link">Achievements &amp; Education</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__socials">
+      <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:vwadhwa02@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ── Hero ── -->
+    <section class="hero" id="hero">
+      <div class="hero__bg">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+        <canvas class="hero__grid" id="gridCanvas"></canvas>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          <span>AI Software Engineer · GenAI &amp; MCP Specialist</span>
+        </div>
+
+        <h1 class="hero__title">
+          Hi, I'm <span class="gradient-text">Vaibhav Wadhwa</span><br />
+          Architecting <span class="hero__typed" id="typed"></span>
+        </h1>
+
+        <p class="hero__sub">
+          B.Tech CSE graduate specializing in Agentic AI, MCP (Model Context Protocol), RAG pipelines, and high-performance full-stack systems. Experienced at <strong>Magicbook Technologies</strong>, <strong>Inventic AI</strong>, <strong>Nikah Forever</strong>, and <strong>Zummit Infolabs</strong>.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary"><i class="fa-solid fa-layer-group"></i> Explore Projects</a>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fa-solid fa-file-pdf"></i> View Resume</a>
+          <a href="#api-hub" class="btn btn--ghost"><i class="fa-solid fa-bolt"></i> Test APIs</a>
+          <a href="mailto:vwadhwa02@gmail.com" class="btn btn--ghost"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </div>
+
+        <!-- Quick Contacts Bar -->
+        <div class="hero__contacts-strip">
+          <a href="mailto:vwadhwa02@gmail.com" class="chip-contact"><i class="fa-solid fa-envelope"></i> vwadhwa02@gmail.com</a>
+          <a href="tel:+919311114563" class="chip-contact"><i class="fa-solid fa-phone"></i> +91 93111 14563</a>
+          <span class="chip-contact"><i class="fa-solid fa-location-dot"></i> Delhi, India / Remote</span>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num" data-target="4">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">AI &amp; Data Roles</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num" data-target="8">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">Key ML / Full-Stack Projects</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num" data-target="3">0</span><span class="stat__plus"></span>
+            <span class="stat__label">Hackathons Won</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num" data-target="90">0</span><span class="stat__plus">%</span>
+            <span class="stat__label">Score Boost with AI Agents</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll">
+        <span>Scroll to Explore</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__tag">01 // ABOUT ME</div>
+        <div class="about__grid">
+          <div class="about__image-wrap">
+            <div class="about__card">
+              <div class="about__avatar-box">
+                <span class="about__initials">VW</span>
+                <div class="about__glow"></div>
+              </div>
+              <h3 class="about__name">Vaibhav Wadhwa</h3>
+              <p class="about__role">AI Software Engineer</p>
+              <div class="about__location"><i class="fa-solid fa-location-arrow"></i> Delhi, India · Available Worldwide</div>
+
+              <div class="about__quick-metrics">
+                <div class="metric">
+                  <span class="metric__val">82.5%</span>
+                  <span class="metric__lbl">B.Tech CGPA</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__val">Top 1%</span>
+                  <span class="metric__lbl">HackerRank Gold</span>
+                </div>
+                <div class="metric">
+                  <span class="metric__val">2.3K+</span>
+                  <span class="metric__lbl">Network</span>
+                </div>
+              </div>
+
+              <div class="about__tags-list">
+                <span class="chip chip--accent">Agentic AI</span>
+                <span class="chip chip--accent">MCP</span>
+                <span class="chip chip--accent">RAG</span>
+                <span class="chip chip--accent">FastAPI</span>
+                <span class="chip chip--accent">React</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <h2 class="section__heading">Engineering Next-Gen <span class="gradient-text">Intelligent Systems</span></h2>
+            <p class="lead-text">
+              I am a Computer Science graduate from <strong>Vivekananda Institute of Professional Studies, Delhi (2025)</strong>, specializing in Industrial Internet of Things and Artificial Intelligence.
+            </p>
+            <p>
+              My expertise spans developing autonomous multi-agent workflows, context-aware MCP servers, enterprise RAG query assistants, and LLM-powered evaluation pipelines. Over the past year, I have engineered AI solutions that directly improve educational outcomes, automate complex data pipelines, and cut query processing times across fast-growing tech companies.
+            </p>
+
+            <div class="about__features">
+              <div class="feature-card">
+                <div class="feature-card__icon"><i class="fa-solid fa-robot"></i></div>
+                <div>
+                  <h4>Autonomous Agents &amp; MCP</h4>
+                  <p>Building Model Context Protocol tooling and multi-agent coordination for structured decisions.</p>
+                </div>
+              </div>
+              <div class="feature-card">
+                <div class="feature-card__icon"><i class="fa-solid fa-database"></i></div>
+                <div>
+                  <h4>RAG &amp; Vector Pipelines</h4>
+                  <p>Enterprise data retrieval, automated SQL generation, and context-grounded intelligence.</p>
+                </div>
+              </div>
+              <div class="feature-card">
+                <div class="feature-card__icon"><i class="fa-solid fa-cloud"></i></div>
+                <div>
+                  <h4>Cloud &amp; Microservices</h4>
+                  <p>Deploying production pipelines on AWS, GCP, Databricks, Docker, and scalable APIs.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__actions">
+              <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" class="btn btn--primary">
+                <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+              </a>
+              <a href="#contact" class="btn btn--outline">
+                <i class="fa-solid fa-paper-plane"></i> Discuss an Opportunity
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Experience ── -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section__tag">02 // CAREER TIMELINE</div>
+        <h2 class="section__heading">Professional <span class="gradient-text">Experience</span></h2>
+        <p class="section__sub">Real-world impact across AI software engineering, GenAI research, and data systems.</p>
+
+        <div class="timeline">
+
+          <!-- Magicbook Technologies -->
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <div class="timeline__badge">Current Position</div>
+                  <h3>AI Software Engineer</h3>
+                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Magicbook Technologies · Remote, Portugal</span>
+                </div>
+                <span class="timeline__period">May 2025 – Present</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Designing and refining autonomous AI agents to enhance student learning through interactive quizzes and tailored, personalised learning paths.</li>
+                <li>Architected structured grading systems (e.g. for official ENEM essay evaluation) strictly aligned with certified evaluation rubrics.</li>
+                <li>Achieved a <strong>90% verified improvement in student writing scores</strong> through automated, iterative agent feedback loops.</li>
+                <li>Developing high-efficiency LLM-powered tools converting raw notebook inputs into interactive, multimodal study aids.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="chip">LLMs</span>
+                <span class="chip">AI Agents</span>
+                <span class="chip">Rubric Evaluation</span>
+                <span class="chip">Python</span>
+                <span class="chip">Prompt Eng</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inventic AI -->
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3>AI Engineer Intern</h3>
+                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Inventic AI · Remote, Bengaluru</span>
+                </div>
+                <span class="timeline__period">Mar 2025 – May 2025</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Designed AI-driven autonomous agents to streamline fintech operational processes and elevate customer engagement.</li>
+                <li>Built <strong>MCP-based (Model Context Protocol)</strong> models enabling real-time contextual decision-making and actionable analytical insights.</li>
+                <li>Enhanced client customer profiling and predictive analytics systems for financial services stakeholders.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="chip">MCP Architecture</span>
+                <span class="chip">Fintech AI</span>
+                <span class="chip">Python</span>
+                <span class="chip">Context Engines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nikah Forever -->
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3>Data Analyst Intern</h3>
+                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Nikah Forever · Okhla, Delhi</span>
+                </div>
+                <span class="timeline__period">Jan 2025 – Apr 2025</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Engineered a <strong>RAG-based AI assistant</strong> to automate dynamic SQL generation, cutting analyst query turnaround time by <strong>40%</strong>.</li>
+                <li>Integrated cloud storage and processing pipelines across AWS, GCP, and Databricks for reliable data aggregation at scale.</li>
+                <li>Empowered executive leadership with real-time analytics dashboards powered by AI-backed metrics and anomaly signals.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="chip">RAG Assistant</span>
+                <span class="chip">AWS &amp; GCP</span>
+                <span class="chip">Databricks</span>
+                <span class="chip">SQL Automation</span>
+                <span class="chip">BI Dashboards</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Zummit Infolabs -->
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <div>
+                  <h3>Gen AI Intern</h3>
+                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Zummit Infolabs · Remote, Bengaluru</span>
+                </div>
+                <span class="timeline__period">Oct 2024 – Jan 2025</span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Developed production NLP conversational chatbots, reducing client customer response wait times by <strong>30%</strong>.</li>
+                <li>Streamlined internal development and operational workflows through automation scripts and model pipelines.</li>
+                <li>Collaborated on robust containerized model deployments, maintaining <strong>95% uptime</strong> across live use cases.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="chip">GenAI</span>
+                <span class="chip">NLP Chatbots</span>
+                <span class="chip">Python</span>
+                <span class="chip">Docker</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projects ── -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__tag">03 // FEATURED WORK</div>
+        <h2 class="section__heading">Selected <span class="gradient-text">Projects</span></h2>
+        <p class="section__sub">Systems demonstrating expertise in MCP, Multimodal Generative AI, RAG, and Computer Vision.</p>
+
+        <div class="projects__grid">
+
+          <!-- Project 1: MySQL MCP -->
+          <article class="project-card project-card--featured">
+            <div class="project-card__visual visual-mcp">
+              <div class="code-preview">
+                <div class="code-preview__header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="code-preview__title">mysql-mcp-agent.py</span>
+                </div>
+                <pre class="code-preview__body"><code>@mcp.tool()
+def query_business_analytics(prompt: str):
+    schema = db.introspect()
+    sql = llm.generate_sql(prompt, schema)
+    return db.execute_safe(sql)</code></pre>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="chip">2024</span>
+                <span class="chip">Model Context Protocol</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Python</span>
+                <span class="chip">LLMs</span>
+              </div>
+              <h3>MySQL MCP System for Business Analytics</h3>
+              <p>Constructed an enterprise context-aware database querying system utilizing LLMs and the Model Context Protocol (MCP) for dynamic business intelligence. Allows natural language interrogation of relational schemas with guardrails, query validation, and automated execution.</p>
+              <div class="project-card__highlights">
+                <span><i class="fa-solid fa-check"></i> Context-aware schema introspection</span>
+                <span><i class="fa-solid fa-check"></i> High-accuracy NL-to-SQL translation</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">View on GitHub →</a>
+                <a href="#api-hub" class="link-arrow text-secondary">Try Live API Demo →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Personalized Educational Reels -->
+          <article class="project-card">
+            <div class="project-card__visual visual-video">
+              <div class="visual-badge"><i class="fa-solid fa-video"></i> Multimodal GenAI</div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="chip">2025</span>
+                <span class="chip">Generative AI</span>
+                <span class="chip">Computer Vision</span>
+                <span class="chip">Multimodal LLMs</span>
+              </div>
+              <h3>Personalized Educational Reels System</h3>
+              <p>An innovative generative system creating short educational video reels for children using images of their own toys, sketches, and drawings as primary visual inputs. Uses multimodal models to generate pedagogically aligned narratives (alphabets, numbers, science).</p>
+              <div class="project-card__links">
+                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Repository →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Two-Layer OCR Intelligence Pipeline -->
+          <article class="project-card">
+            <div class="project-card__visual visual-ocr">
+              <div class="visual-badge"><i class="fa-solid fa-file-code"></i> OCR + LaTeX</div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="chip">2025</span>
+                <span class="chip">Python</span>
+                <span class="chip">Open-Source LLMs</span>
+                <span class="chip">LaTeX</span>
+              </div>
+              <h3>Two-Layer OCR Intelligence Pipeline for Notes</h3>
+              <p>End-to-end post-processing system for scanned handwritten academic notes. Layer 1 cleans artifacts and removes contextual noise. Layer 2 translates notes into publication-grade LaTeX formulas, diagrams, and structures preserving original intent.</p>
+              <div class="project-card__links">
+                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Repository →</a>
+                <a href="#api-hub" class="link-arrow text-secondary">Test Tool →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: AI Cold Email Outreach -->
+          <article class="project-card">
+            <div class="project-card__visual visual-email">
+              <div class="visual-badge"><i class="fa-solid fa-paper-plane"></i> AI Agents</div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="chip">2024</span>
+                <span class="chip">Python</span>
+                <span class="chip">Open-Source LLMs</span>
+                <span class="chip">Agent Automation</span>
+              </div>
+              <h3>AI-Powered Cold Email Outreach Tool</h3>
+              <p>Automated hyper-personalized outbound email outreach using LLM agents that research recipient profiles, tailor value propositions, and align communication style to email marketing context, maximizing conversion rates.</p>
+              <div class="project-card__links">
+                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Repository →</a>
+                <a href="#api-hub" class="link-arrow text-secondary">Test Email Generator →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Blood Cancer Detection -->
+          <article class="project-card">
+            <div class="project-card__visual visual-med">
+              <div class="visual-badge"><i class="fa-solid fa-microscope"></i> Medical CV</div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="chip">Computer Vision</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">Healthcare</span>
+              </div>
+              <h3>Blood Cancer Detection &amp; Diagnostics</h3>
+              <p>Deep learning diagnostic tool utilizing convolutional computer vision architectures to identify and classify malignant cell anomalies from microscopic blood smear samples with high sensitivity.</p>
+              <div class="project-card__links">
+                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Project Details →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Skills ── -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__tag">04 // TECHNICAL EXPERTISE</div>
+        <h2 class="section__heading text-center">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <p class="section__sub text-center">Technologies, frameworks, and developer tools battle-tested in production.</p>
+
+        <div class="skills__categories">
+          <button class="skills__tab active" data-cat="all">All Stack</button>
+          <button class="skills__tab" data-cat="languages">Languages</button>
+          <button class="skills__tab" data-cat="ai">AI / GenAI / LLM</button>
+          <button class="skills__tab" data-cat="data">Data &amp; Cloud</button>
+          <button class="skills__tab" data-cat="tools">Tools &amp; DevOps</button>
+        </div>
+
+        <div class="skills__grid" id="skillsGrid">
+          <!-- Populated dynamically by main.js with all user skills from PDF resume -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Live Internal APIs & Developer Hub ── -->
+    <section class="section api-hub" id="api-hub">
+      <div class="container">
+        <div class="section__tag">05 // LIVE INTERNAL APIS &amp; UTILITIES</div>
+        <div class="api-hub__header">
+          <div>
+            <h2 class="section__heading">Internal APIs &amp; <span class="gradient-text">Developer Tools</span></h2>
+            <p class="section__sub" style="margin-inline: 0; text-align: left;">
+              Interactive sandbox demonstrating the internal API endpoints and tools built for my personal workflow and portfolio automation.
+            </p>
+          </div>
+          <div class="api-hub__mode-toggle">
+            <span class="mode-label">API Mode:</span>
+            <span class="badge-mode active" id="apiModeBadge"><i class="fa-solid fa-circle-check"></i> Live Interactive Ready</span>
+          </div>
+        </div>
+
+        <div class="api-hub__layout">
+          <!-- Left: Tool Selector -->
+          <div class="api-hub__nav">
+            <button class="api-tab-btn active" data-tool="sql">
+              <i class="fa-solid fa-database"></i>
+              <div>
+                <strong>Natural Language to SQL</strong>
+                <span>Context-aware RAG / MCP Query API</span>
+              </div>
+            </button>
+            <button class="api-tab-btn" data-tool="email">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <div>
+                <strong>Cold Outreach AI Generator</strong>
+                <span>Tailored email generation API</span>
+              </div>
+            </button>
+            <button class="api-tab-btn" data-tool="latex">
+              <i class="fa-solid fa-square-root-variable"></i>
+              <div>
+                <strong>OCR to LaTeX Formatter</strong>
+                <span>2-Layer academic note cleaner</span>
+              </div>
+            </button>
+            <button class="api-tab-btn" data-tool="eval">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <strong>Essay Rubric Evaluator</strong>
+                <span>ENEM-style rubric scoring API</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Right: Interactive Console -->
+          <div class="api-hub__console">
+            <div class="console-header">
+              <div class="console-endpoint">
+                <span class="http-badge post">POST</span>
+                <span class="endpoint-path" id="endpointPath">/api/v1/sql/generate</span>
+              </div>
+              <button class="btn btn--xs btn--outline" id="copyEndpointBtn"><i class="fa-regular fa-copy"></i> Copy Path</button>
+            </div>
+
+            <!-- Panel 1: NL to SQL -->
+            <div class="console-panel active" id="panel-sql">
+              <div class="form-group">
+                <label>Natural Language Business Request:</label>
+                <input type="text" id="sqlInput" class="input-modern" value="Find top 5 customers with highest revenue and total orders placed in 2024" />
+              </div>
+              <div class="console-actions">
+                <button class="btn btn--primary btn--sm" id="runSqlBtn"><i class="fa-solid fa-play"></i> Execute API Call</button>
+                <span class="api-latency" id="sqlLatency">Latency: ~45ms</span>
+              </div>
+              <div class="console-output">
+                <div class="console-output__title">JSON Response:</div>
+                <pre><code id="sqlOutput">{
+  "status": "success",
+  "prompt": "Find top 5 customers with highest revenue and total orders placed in 2024",
+  "generated_sql": "SELECT c.id, c.name, SUM(o.total_amount) AS revenue, COUNT(o.id) AS orders_count\nFROM customers c\nJOIN orders o ON c.id = o.customer_id\nWHERE YEAR(o.created_at) = 2024\nGROUP BY c.id, c.name\nORDER BY revenue DESC\nLIMIT 5;",
+  "execution_plan": "Indexed Index Scan on orders.created_at (Estimated rows: 1420)",
+  "mcp_context_applied": true
+}</code></pre>
+              </div>
+            </div>
+
+            <!-- Panel 2: Email Outreach -->
+            <div class="console-panel" id="panel-email">
+              <div class="form-group">
+                <label>Prospect Name &amp; Company / Role:</label>
+                <input type="text" id="emailInput" class="input-modern" value="Alex Rivera, VP of Engineering at ScaleAI" />
+              </div>
+              <div class="console-actions">
+                <button class="btn btn--primary btn--sm" id="runEmailBtn"><i class="fa-solid fa-paper-plane"></i> Generate Outreach</button>
+                <span class="api-latency" id="emailLatency">Latency: ~60ms</span>
+              </div>
+              <div class="console-output">
+                <div class="console-output__title">Generated Email Response:</div>
+                <pre><code id="emailOutput">{
+  "status": "success",
+  "subject": "Supercharging Agentic MCP Workflows at ScaleAI",
+  "body": "Hi Alex,\n\nI noticed ScaleAI's recent push into autonomous evaluation benchmarks. At Magicbook Technologies and Inventic AI, I've spent the past year architecting MCP-based agent systems and automated rubric grading engines that reduced latency by 40% and improved evaluation precision.\n\nWould you be open to a 10-minute chat this Thursday to swap ideas on multi-agent context grounding?\n\nBest,\nVaibhav Wadhwa\ngithub.com/Vwadhwa02"
+}</code></pre>
+              </div>
+            </div>
+
+            <!-- Panel 3: LaTeX Formatter -->
+            <div class="console-panel" id="panel-latex">
+              <div class="form-group">
+                <label>Raw OCR Scanned Expression / Text:</label>
+                <input type="text" id="latexInput" class="input-modern" value="integral from 0 to inf of e^(-x^2) dx = sqrt(pi)/2" />
+              </div>
+              <div class="console-actions">
+                <button class="btn btn--primary btn--sm" id="runLatexBtn"><i class="fa-solid fa-code"></i> Format with Layer 2</button>
+              </div>
+              <div class="console-output">
+                <div class="console-output__title">Formatted LaTeX Output:</div>
+                <pre><code id="latexOutput">{
+  "status": "success",
+  "layer1_denoised": "integral from 0 to infinity of exp(-x^2) dx = sqrt(pi) / 2",
+  "layer2_latex": "\\int_{0}^{\\infty} e^{-x^2} \\, dx = \\frac{\\sqrt{\\pi}}{2}",
+  "math_render_preview": "∫ [0 to ∞] e^(-x²) dx = √π / 2"
+}</code></pre>
+              </div>
+            </div>
+
+            <!-- Panel 4: Essay Rubric Evaluator -->
+            <div class="console-panel" id="panel-eval">
+              <div class="form-group">
+                <label>Essay Snippet / Thesis for Rubric Scoring:</label>
+                <input type="text" id="evalInput" class="input-modern" value="A inclusão digital é fundamental no combate às desigualdades contemporâneas no acesso ao conhecimento." />
+              </div>
+              <div class="console-actions">
+                <button class="btn btn--primary btn--sm" id="runEvalBtn"><i class="fa-solid fa-chart-line"></i> Run Rubric Evaluation</button>
+              </div>
+              <div class="console-output">
+                <div class="console-output__title">Rubric Assessment Breakdown:</div>
+                <pre><code id="evalOutput">{
+  "status": "scored",
+  "competencies": {
+    "C1_grammar_mechanics": 180,
+    "C2_theme_comprehension": 200,
+    "C3_argumentation_structure": 190,
+    "C4_cohesion_mechanisms": 180,
+    "C5_intervention_proposal": 170
+  },
+  "total_score": 920,
+  "max_score": 1000,
+  "feedback": "Strong topical defense. Recommendation: augment intervention proposal with concrete institutional executing agent."
+}</code></pre>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Education & Achievements ── -->
+    <section class="section achievements" id="achievements">
+      <div class="container">
+        <div class="section__tag">06 // CREDENTIALS &amp; HONORS</div>
+        <h2 class="section__heading">Education &amp; <span class="gradient-text">Achievements</span></h2>
+        <p class="section__sub">Academic foundation, competitive milestones, and leadership initiatives.</p>
+
+        <div class="credentials-grid">
+
+          <!-- Education Card -->
+          <div class="card-credential">
+            <div class="card-credential__header">
+              <span class="cred-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+              <div>
+                <h3>Education</h3>
+                <span>Academic Record</span>
+              </div>
+            </div>
+            <div class="cred-list">
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>B.Tech., CSE (IIoT)</strong>
+                  <span class="cred-year">2021 – 2025</span>
+                </div>
+                <p class="cred-sub">Vivekananda Institute of Professional Studies, Delhi</p>
+                <span class="badge-grade">Score: 82.5% (8.25 CGPA)</span>
+              </div>
+
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>Senior Secondary (CBSE Class XII)</strong>
+                  <span class="cred-year">2021</span>
+                </div>
+                <p class="cred-sub">Happy Home Public School, Delhi</p>
+                <span class="badge-grade">Score: 87%</span>
+              </div>
+
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>Secondary School (CBSE Class X)</strong>
+                  <span class="cred-year">2019</span>
+                </div>
+                <p class="cred-sub">Happy Home Public School, Delhi</p>
+                <span class="badge-grade">Score: 89%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Honors & Awards -->
+          <div class="card-credential">
+            <div class="card-credential__header">
+              <span class="cred-icon"><i class="fa-solid fa-trophy"></i></span>
+              <div>
+                <h3>Key Honors &amp; Awards</h3>
+                <span>Recognitions &amp; Publications</span>
+              </div>
+            </div>
+            <div class="cred-list">
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>Best Paper Award (2024)</strong>
+                </div>
+                <p class="cred-desc">"AI-based Computational Analysis of Shreemad Bhagwad Geeta" — computational NLP research parsing spiritual classical manuscripts.</p>
+              </div>
+
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>HackerRank Gold Badges</strong>
+                </div>
+                <p class="cred-desc">Earned Gold in <strong>Python, SQL, and Problem Solving</strong> (Ranked in Top 1% globally).</p>
+              </div>
+
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>3x Hackathon Winner</strong>
+                </div>
+                <p class="cred-desc">Secured first place in AI-driven waste classification &amp; crop disease detection computer vision hackathons.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leadership & Social Responsibility -->
+          <div class="card-credential">
+            <div class="card-credential__header">
+              <span class="cred-icon"><i class="fa-solid fa-users"></i></span>
+              <div>
+                <h3>Leadership &amp; Clubs</h3>
+                <span>Student Community Management</span>
+              </div>
+            </div>
+            <div class="cred-list">
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>Management Head — Srijan Club</strong>
+                  <span class="cred-year">2022 – 2023</span>
+                </div>
+                <p class="cred-desc">Spearheaded 15+ student social welfare drives and raised <strong>Rs. 5,00,000+ in donations</strong> involving 2,000+ students.</p>
+              </div>
+
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>Management Head — Kavyarang Club</strong>
+                  <span class="cred-year">2023 – 2024</span>
+                </div>
+                <p class="cred-desc">Organized 12+ university literary festivals and events, increasing overall attendee outreach by 40%.</p>
+              </div>
+
+              <div class="cred-item">
+                <div class="cred-item__top">
+                  <strong>IBM &amp; HackerRank Certifications</strong>
+                </div>
+                <p class="cred-desc">NodeJS, Deep Learning Fundamentals, Python for Data Science, Advanced SQL, and REST APIs.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__tag">07 // CONTACT</div>
+        <h2 class="section__heading text-center">Let's <span class="gradient-text">Build Something Great</span></h2>
+        <p class="section__sub text-center">Open to AI Software Engineering, GenAI/LLM roles, consulting, or technical collaborations.</p>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <h3>Get In Touch</h3>
+            <p>
+              Feel free to reach out directly via email, phone, or LinkedIn. I respond quickly to inquiries regarding engineering positions, agentic systems, or technical inquiries.
+            </p>
+
+            <div class="contact__channels">
+              <a href="mailto:vwadhwa02@gmail.com" class="contact__channel">
+                <span class="contact__channel-icon"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <strong>Primary Email</strong>
+                  <span>vwadhwa02@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:+919311114563" class="contact__channel">
+                <span class="contact__channel-icon"><i class="fa-solid fa-phone"></i></span>
+                <div>
+                  <strong>Direct Phone / WhatsApp</strong>
+                  <span>+91 93111 14563</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" class="contact__channel">
+                <span class="contact__channel-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <span>linkedin.com/in/vwadhwa02</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="contact__channel">
+                <span class="contact__channel-icon"><i class="fa-brands fa-github"></i></span>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>github.com/Vwadhwa02</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Sarah Connor" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="sarah@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject / Purpose</label>
+              <input type="text" id="subject" name="subject" placeholder="Opportunity @ Tech / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Hi Vaibhav, I'd like to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn__text">Send Message</span>
+              <span class="btn__icon"><i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+            <div class="form-status" id="formStatus" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#hero" class="nav__logo">
+          <span class="nav__logo-symbol">&lt;VW/&gt;</span>
+          <span class="nav__logo-name">Vaibhav Wadhwa</span>
+        </a>
+        <p>Built with modern standards by <strong>Vaibhav Wadhwa</strong> · 2025</p>
+        <div class="footer__socials">
+          <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:vwadhwa02@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>

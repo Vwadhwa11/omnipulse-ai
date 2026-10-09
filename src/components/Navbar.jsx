@@ -25,7 +25,7 @@ export default function Navbar({ onOpenWaitlist }) {
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <div className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
             <a href="#pillars" className="hover:text-slate-900 transition-colors">Core Platform</a>
             <a href="#interactive-demo" className="hover:text-slate-900 transition-colors flex items-center gap-1.5">
               <span>Interactive Preview</span>
@@ -34,6 +34,7 @@ export default function Navbar({ onOpenWaitlist }) {
             <a href="#roi-calc" className="hover:text-slate-900 transition-colors">ROI Calculator</a>
             <a href="#comparison" className="hover:text-slate-900 transition-colors">Why OmniPulse</a>
             <a href="#faq" className="hover:text-slate-900 transition-colors">FAQ</a>
+            <a href="/portfolio" className="text-slate-900 hover:text-slate-600 font-semibold transition-colors">Portfolio</a>
           </div>
 
           {/* Right Action */}
@@ -102,6 +103,13 @@ export default function Navbar({ onOpenWaitlist }) {
             className="block px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg"
           >
             FAQ
+          </a>
+          <a
+            href="/portfolio"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-50 rounded-lg"
+          >
+            Founder Portfolio & Resume →
           </a>
           <button
             onClick={() => {
