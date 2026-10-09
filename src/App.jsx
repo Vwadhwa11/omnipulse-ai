@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import PillarsSection from './components/PillarsSection';
-import InteractiveDemo from './components/InteractiveDemo';
-import RoiCalculator from './components/RoiCalculator';
-import ComparisonSection from './components/ComparisonSection';
-import PerksSection from './components/PerksSection';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
 import WaitlistModal from './components/WaitlistModal';
@@ -15,9 +10,7 @@ export default function App() {
 
   const handleOpenWaitlist = () => {
     const formElement = document.getElementById('waitlist-form');
-    if (formElement && window.scrollY > 400) {
-      setIsWaitlistModalOpen(true);
-    } else if (formElement) {
+    if (formElement) {
       formElement.scrollIntoView({ behavior: 'smooth' });
     } else {
       setIsWaitlistModalOpen(true);
@@ -31,32 +24,29 @@ export default function App() {
 
       {/* Main Content Area */}
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* Clean Hero & Core Features */}
         <HeroSection />
 
-        {/* 4 Core Pillars Detail */}
-        <PillarsSection />
-
-        {/* Live Interactive Product Sandbox */}
-        <InteractiveDemo />
-
-        {/* Dynamic ROI & Time Savings Calculator */}
-        <RoiCalculator onOpenWaitlist={() => setIsWaitlistModalOpen(true)} />
-
-        {/* Why OmniPulse Comparison Grid */}
-        <ComparisonSection />
-
-        {/* VIP Early Access Perks & Tiers */}
-        <PerksSection onOpenWaitlist={() => setIsWaitlistModalOpen(true)} />
+        {/* Short Statement / About */}
+        <section id="about" className="py-16 bg-slate-50 border-b border-slate-200/80">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-3">
+              Built for marketing teams tired of context switching
+            </h2>
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+              Modern growth stacks are fragmented across separate tools for email, creator outreach, ad analytics, and social scheduling. OmniPulse brings these workflows together under a single intelligent system so you can focus on strategy, not tool maintenance.
+            </p>
+          </div>
+        </section>
 
         {/* FAQ */}
         <FaqSection />
       </main>
 
-      {/* Footer */}
-      <Footer onOpenWaitlist={() => setIsWaitlistModalOpen(true)} />
+      {/* Clean Minimal Footer */}
+      <Footer />
 
-      {/* Pop-up Waitlist Modal */}
+      {/* Waitlist Modal */}
       <WaitlistModal
         isOpen={isWaitlistModalOpen}
         onClose={() => setIsWaitlistModalOpen(false)}

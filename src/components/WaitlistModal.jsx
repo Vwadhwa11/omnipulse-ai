@@ -21,13 +21,13 @@ export default function WaitlistModal({ isOpen, onClose }) {
           <X className="w-5 h-5" />
         </button>
 
-        <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-3">
-            <span>Pioneer Early Access Cohort</span>
+        <div className="text-center mb-5">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium mb-2.5">
+            <span>Private Beta</span>
           </div>
-          <h3 className="text-xl font-bold text-slate-900">Request Priority Access</h3>
+          <h3 className="text-xl font-bold text-slate-900">Join the Waitlist</h3>
           <p className="text-slate-600 text-xs sm:text-sm mt-1">
-            Unlock 3 months complimentary access, grandfathered 50% discount, and private beta priority.
+            Enter your email to request early access as private beta invites roll out.
           </p>
         </div>
 

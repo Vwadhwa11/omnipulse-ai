@@ -1,86 +1,74 @@
 import React from 'react';
-import CountdownTimer from './CountdownTimer';
 import WaitlistForm from './WaitlistForm';
-import { Mail, BarChart3, Users, Share2, ArrowRight } from 'lucide-react';
+import { Mail, BarChart3, Users, Share2 } from 'lucide-react';
 
 export default function HeroSection() {
-  const capabilityTags = [
-    { icon: Mail, label: 'Automated Email Marketing' },
-    { icon: BarChart3, label: 'Cross-Channel Analytics' },
-    { icon: Users, label: 'Influencer Discovery & Outreach' },
-    { icon: Share2, label: 'Social Media Campaign Management' },
-  ];
-
-  const integrationLogos = [
-    'Meta Ads', 'Google Ads', 'Shopify', 'TikTok Ads', 'Klaviyo', 'LinkedIn', 'YouTube', 'Stripe'
+  const capabilities = [
+    {
+      icon: Mail,
+      title: 'Automated Email Marketing',
+      description: 'Lifecycle email funnels, personalized copywriting, and intelligent send-time optimization.'
+    },
+    {
+      icon: BarChart3,
+      title: 'Digital Performance Analytics',
+      description: 'Unified cross-channel attribution, real-time ROAS tracking, and actionable growth insights.'
+    },
+    {
+      icon: Users,
+      title: 'Influencer Discovery & Outreach',
+      description: 'Creator search across TikTok, Instagram & YouTube with automated personalized outreach.'
+    },
+    {
+      icon: Share2,
+      title: 'Social Media Campaign Management',
+      description: 'Multi-platform scheduling, automated content repurposing, and unified brand coordination.'
+    }
   ];
 
   return (
-    <div className="relative pt-28 pb-20 md:pt-36 md:pb-24 bg-white border-b border-slate-200/80 overflow-hidden">
-      {/* Clean architectural subtle dot grid */}
-      <div className="absolute inset-0 bg-grid-subtle pointer-events-none opacity-60"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <div className="pt-24 pb-16 md:pt-32 md:pb-24 bg-white border-b border-slate-200/80">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Top Announcement Badge */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-800 mb-8 shadow-xs">
-          <span className="w-2 h-2 rounded-full bg-slate-900"></span>
-          <span>Introducing OmniPulse Marketing OS</span>
-          <span className="text-slate-300">|</span>
-          <span className="text-slate-600">Private Beta Cohorts Open</span>
-          <ArrowRight className="w-3.5 h-3.5 text-slate-500 ml-0.5" />
+        {/* Status Badge */}
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-800 mb-6 shadow-xs">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+          <span>Coming Soon · Private Beta</span>
         </div>
 
         {/* Hero Title */}
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-950 tracking-tight leading-[1.08] max-w-5xl mx-auto mb-6">
-          The all-in-one marketing platform for high-velocity teams.
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12] mb-5">
+          An AI-powered marketing platform for modern growth.
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10 font-normal">
-          Stop managing 6 disconnected tools and fragmented spreadsheets. Automate lifecycle email marketing, analyze digital performance in real time, discover verified influencers, and coordinate social media campaigns—all from a single unified workspace.
+        <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
+          We are building a unified platform to help businesses automate email marketing, analyze digital marketing performance, discover and conduct outreach to influencers, and manage social media campaigns from a single platform.
         </p>
 
-        {/* 4 Core Pillars Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2.5 max-w-4xl mx-auto mb-12">
-          {capabilityTags.map((tag, i) => {
-            const Icon = tag.icon;
-            return (
-              <div
-                key={i}
-                className="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-slate-50 border border-slate-200/80 text-xs font-medium text-slate-700 shadow-xs"
-              >
-                <Icon className="w-3.5 h-3.5 text-slate-500" />
-                <span>{tag.label}</span>
-              </div>
-            );
-          })}
-        </div>
-
         {/* Waitlist Form */}
-        <div className="mb-14" id="waitlist-form">
+        <div className="mb-16" id="waitlist-form">
           <WaitlistForm />
         </div>
 
-        {/* Live Countdown */}
-        <div className="mt-8 mb-16 pt-8 border-t border-slate-200/80 max-w-xl mx-auto">
-          <CountdownTimer />
-        </div>
-
-        {/* Integrations Strip */}
-        <div className="pt-4">
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-5">
-            Native integrations across your modern growth stack
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
-            {integrationLogos.map((tool, idx) => (
-              <div
-                key={idx}
-                className="px-3.5 py-1.5 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-600 hover:text-slate-900 transition-colors"
-              >
-                {tool}
-              </div>
-            ))}
+        {/* 4 Core Pillars Grid */}
+        <div id="features" className="pt-10 border-t border-slate-100 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {capabilities.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="p-5 rounded-xl bg-slate-50 border border-slate-200/80 transition-all hover:border-slate-300"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-white border border-slate-200 flex items-center justify-center text-slate-900 mb-3 shadow-xs">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <h3 className="text-sm font-semibold text-slate-900 mb-1">{item.title}</h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">{item.description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
 
