@@ -1,886 +1,1287 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vaibhav Wadhwa — AI Software Engineer, GenAI/LLM Researcher & Full Stack Developer" />
-  <meta name="keywords" content="Vaibhav Wadhwa, AI Engineer, GenAI, LLMs, MCP, RAG, Machine Learning, Python, Full Stack" />
-  <meta name="author" content="Vaibhav Wadhwa" />
-  <title>Vaibhav Wadhwa · AI Software Engineer &amp; Full Stack Developer</title>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Vaibhav Wadhwa · AI Software Engineer" />
-  <meta property="og:description" content="AI Software Engineer specializing in Agentic AI, MCP, LLMs, RAG, and scalable full-stack architectures." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://vwadhwa02.github.io/Portfolio/" />
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- ── Top Announcement / Status Bar ── -->
-  <div class="top-bar">
-    <div class="top-bar__inner">
-      <span class="status-indicator"></span>
-      <span>Currently building AI agents @ <strong>Magicbook Technologies</strong> (Portugal)</span>
-      <span class="top-bar__divider">|</span>
-      <a href="#api-hub" class="top-bar__link">Explore Live Internal APIs &amp; Tools →</a>
-    </div>
-  </div>
+      <!-- Base Styles -->
+      <style>
 
-  <!-- ── Navigation ── -->
-  <nav class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#hero" class="nav__logo">
-        <span class="nav__logo-symbol">&lt;VW/&gt;</span>
-        <span class="nav__logo-name">Vaibhav Wadhwa</span>
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
       </a>
 
-      <ul class="nav__links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#api-hub" class="nav__link-highlight">Internal APIs <span class="badge-new">NEW</span></a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
 
-      <div class="nav__cta-wrap">
-        <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn--sm btn--outline" aria-label="Resume PDF"><i class="fa-solid fa-file-pdf"></i> Resume</a>
-        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="icon-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" class="icon-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#contact" class="btn btn--sm btn--primary">Get In Touch</a>
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="2f309fe2-b2fb-49dd-beac-80d48378b357" data-section-id="2f309fe2-b2fb-49dd-beac-80d48378b357">
+
+<div id="root">
+  <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex-shrink-0">
+          <span class="text-xl font-bold">Vaibhav Wadhwa</span>
+        </div>
+        
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#about" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+            <a href="#skills" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+            <a href="#experience" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+            <a href="#projects" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+            <a href="#education" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Education</a>
+            <a href="#achievements" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Achievements</a>
+            <a href="#certifications" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Certifications</a>
+            <a href="#contact" class="hover:bg-neutral-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <a href="https://www.linkedin.com/in/vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-white hover:text-neutral-300">
+            
+          </a>
+          <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-white hover:text-neutral-300">
+            
+          </a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-neutral-700 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
 
-      <button class="nav__burger" aria-label="Toggle navigation menu" aria-expanded="false" id="burger">
-        <span></span><span></span><span></span>
-      </button>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#about" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#skills" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Skills</a>
+        <a href="#experience" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Experience</a>
+        <a href="#projects" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="#education" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Education</a>
+        <a href="#achievements" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Achievements</a>
+        <a href="#certifications" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Certifications</a>
+        <a href="#contact" class="block hover:bg-neutral-700 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+        <div class="flex space-x-4 px-3 py-2">
+          <a href="https://www.linkedin.com/in/vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-white hover:text-neutral-300">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+            </svg>
+          </a>
+          <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-white hover:text-neutral-300">
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
 
-  <!-- Mobile Menu Drawer -->
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <ul role="list">
-      <li><a href="resume.pdf" target="_blank" class="mobile-link"><i class="fa-solid fa-file-pdf"></i> View Resume (PDF)</a></li>
-      <li><a href="#about" class="mobile-link">About</a></li>
-      <li><a href="#experience" class="mobile-link">Experience</a></li>
-      <li><a href="#projects" class="mobile-link">Projects</a></li>
-      <li><a href="#skills" class="mobile-link">Skills</a></li>
-      <li><a href="#api-hub" class="mobile-link">Internal APIs Hub</a></li>
-      <li><a href="#achievements" class="mobile-link">Achievements &amp; Education</a></li>
-      <li><a href="#contact" class="mobile-link">Contact</a></li>
-    </ul>
-    <div class="mobile-menu__socials">
-      <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-      <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-      <a href="mailto:vwadhwa02@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking links
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Add scroll shadow effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 0) {
+        navbar.classList.add('shadow-lg');
+      } else {
+        navbar.classList.remove('shadow-lg');
+      }
+    });
+  </script>
+</div></element><element id="5758eb28-0160-48ac-bb6f-a8f607103235" data-section-id="5758eb28-0160-48ac-bb6f-a8f607103235">
+
+<div id="root">
+  <section id="hero" class="min-h-[70vh] bg-neutral-900 text-white pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center h-full gap-8 py-20" id="el-44mhd3yn">
+      <div class="w-full md:w-1/2 animate__animated animate__fadeInLeft" id="el-auo97gso">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4" id="el-9e2ol5qi">Vaibhav Wadhwa</h1>
+        <p class="text-xl md:text-2xl text-neutral-300 mb-6" id="el-07w3y3g4">AI Software Engineer &amp; GenAI Specialist</p>
+        <div class="flex flex-wrap gap-4 mb-8" id="el-0x6n5t1b">
+          <a href="mailto:vwadhwa02@gmail.com" class="flex items-center gap-2 text-neutral-300 hover:text-white" id="el-p7joizst">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-gu47j361">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" id="el-t199ag8j"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" id="el-28s3mdlv"></path>
+            </svg>
+            vwadhwa02@gmail.com
+          </a>
+          <a href="tel:+919311114563" class="flex items-center gap-2 text-neutral-300 hover:text-white" id="el-oql52zhc">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" id="el-bland1uk">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" id="el-50is8wna"></path>
+            </svg>
+            +91-9311114563
+          </a>
+          <a href="https://www.linkedin.com/in/vwadhwa02" class="flex items-center gap-2 text-neutral-300 hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/Vwadhwa02" class="flex items-center gap-2 text-neutral-300 hover:text-white">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+        <div class="flex gap-4" id="el-vb1frh93">
+          <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium transition-colors" id="el-l73843km">
+            Contact Me
+          </a>
+          <a href="/portfolio/resume.pdf" download="Vaibhav_Wadhwa_Resume.pdf" target="_blank" class="border border-blue-600 hover:bg-blue-600/10 px-6 py-3 rounded-lg font-medium transition-colors" id="el-hw8djb7k">Download CV</a>
+        </div>
+      </div>
+      
+      <div class="w-full md:w-1/2 animate__animated animate__fadeInRight" id="el-x59bmeiu">
+        <div class="grid grid-cols-2 gap-4" id="el-o4tqmxzp">
+          <div class="bg-neutral-800 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">4+</h3>
+            <p class="text-neutral-400">Engineering Roles</p>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">6+</h3>
+            <p class="text-neutral-400">Flagship Projects</p>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Top 1%</h3>
+            <p class="text-neutral-400">HackerRank Problem Solving</p>
+          </div>
+          <div class="bg-neutral-800 p-4 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2">Best Paper</h3>
+            <p class="text-neutral-400">Award Winner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden" id="el-j42rd66k">
+      <svg class="relative block w-full h-[50px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" id="el-grvhah64">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="fill-neutral-100" id="el-5tbqy5cc"></path>
+      </svg>
+    </div>
+  </section>
+</div></element><element id="a6e7f86d-3e5a-40e1-a16a-158d53c3755d" data-section-id="a6e7f86d-3e5a-40e1-a16a-158d53c3755d">
+
+<section id="about" class="py-20 bg-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">About Me</h2>
+      <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="animate__animated animate__fadeInLeft">
+        <div class="bg-neutral-50 p-6 rounded-lg shadow-lg">
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="font-medium">AI Software Engineer & GenAI Specialist</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Delhi, India</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-6 animate__animated animate__fadeInRight">
+        <p class="text-lg text-neutral-700">
+          AI Software Engineer with demonstrated experience architecting autonomous AI agents, building structured rubric evaluation systems, and engineering RAG pipelines. Skilled across the modern AI stack—from LangChain, AutoGen, and Model Context Protocol (MCP) to cloud-scale data processing on AWS, GCP, and Databricks.
+        </p>
+        <ul class="space-y-3 text-neutral-700">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Artificial Intelligence & Machine Learning
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Full Stack Development
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Data Science & Analytics
+          </li>
+        </ul>
+        <div class="flex gap-4 pt-4">
+          <a href="https://www.linkedin.com/in/vwadhwa02" target="_blank" class="text-neutral-600 hover:text-blue-600">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/Vwadhwa02" target="_blank" class="text-neutral-600 hover:text-blue-600">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+</section></element><element id="57e59fee-63ef-4232-88f1-48223030baff" data-section-id="57e59fee-63ef-4232-88f1-48223030baff">
 
-  <main id="main-content">
-
-    <!-- ── Hero ── -->
-    <section class="hero" id="hero">
-      <div class="hero__bg">
-        <div class="orb orb--1"></div>
-        <div class="orb orb--2"></div>
-        <div class="orb orb--3"></div>
-        <canvas class="hero__grid" id="gridCanvas"></canvas>
+<section id="skills" class="py-20 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Skills &amp; Technologies</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
       </div>
 
-      <div class="hero__content">
-        <div class="hero__badge">
-          <span class="hero__badge-dot"></span>
-          <span>AI Software Engineer · GenAI &amp; MCP Specialist</span>
-        </div>
-
-        <h1 class="hero__title">
-          Hi, I'm <span class="gradient-text">Vaibhav Wadhwa</span><br />
-          Architecting <span class="hero__typed" id="typed"></span>
-        </h1>
-
-        <p class="hero__sub">
-          B.Tech CSE graduate specializing in Agentic AI, MCP (Model Context Protocol), RAG pipelines, and high-performance full-stack systems. Experienced at <strong>Magicbook Technologies</strong>, <strong>Inventic AI</strong>, <strong>Nikah Forever</strong>, and <strong>Zummit Infolabs</strong>.
-        </p>
-
-        <div class="hero__actions">
-          <a href="#projects" class="btn btn--primary"><i class="fa-solid fa-layer-group"></i> Explore Projects</a>
-          <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn--secondary"><i class="fa-solid fa-file-pdf"></i> View Resume</a>
-          <a href="#api-hub" class="btn btn--ghost"><i class="fa-solid fa-bolt"></i> Test APIs</a>
-          <a href="mailto:vwadhwa02@gmail.com" class="btn btn--ghost"><i class="fa-solid fa-envelope"></i> Contact</a>
-        </div>
-
-        <!-- Quick Contacts Bar -->
-        <div class="hero__contacts-strip">
-          <a href="mailto:vwadhwa02@gmail.com" class="chip-contact"><i class="fa-solid fa-envelope"></i> vwadhwa02@gmail.com</a>
-          <a href="tel:+919311114563" class="chip-contact"><i class="fa-solid fa-phone"></i> +91 93111 14563</a>
-          <span class="chip-contact"><i class="fa-solid fa-location-dot"></i> Delhi, India / Remote</span>
-        </div>
-
-        <div class="hero__stats">
-          <div class="stat">
-            <span class="stat__num" data-target="4">0</span><span class="stat__plus">+</span>
-            <span class="stat__label">AI &amp; Data Roles</span>
-          </div>
-          <div class="stat__divider"></div>
-          <div class="stat">
-            <span class="stat__num" data-target="8">0</span><span class="stat__plus">+</span>
-            <span class="stat__label">Key ML / Full-Stack Projects</span>
-          </div>
-          <div class="stat__divider"></div>
-          <div class="stat">
-            <span class="stat__num" data-target="3">0</span><span class="stat__plus"></span>
-            <span class="stat__label">Hackathons Won</span>
-          </div>
-          <div class="stat__divider"></div>
-          <div class="stat">
-            <span class="stat__num" data-target="90">0</span><span class="stat__plus">%</span>
-            <span class="stat__label">Score Boost with AI Agents</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__scroll">
-        <span>Scroll to Explore</span>
-        <div class="hero__scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- ── About ── -->
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="section__tag">01 // ABOUT ME</div>
-        <div class="about__grid">
-          <div class="about__image-wrap">
-            <div class="about__card">
-              <div class="about__avatar-box">
-                <span class="about__initials">VW</span>
-                <div class="about__glow"></div>
-              </div>
-              <h3 class="about__name">Vaibhav Wadhwa</h3>
-              <p class="about__role">AI Software Engineer</p>
-              <div class="about__location"><i class="fa-solid fa-location-arrow"></i> Delhi, India · Available Worldwide</div>
-
-              <div class="about__quick-metrics">
-                <div class="metric">
-                  <span class="metric__val">82.5%</span>
-                  <span class="metric__lbl">B.Tech CGPA</span>
-                </div>
-                <div class="metric">
-                  <span class="metric__val">Top 1%</span>
-                  <span class="metric__lbl">HackerRank Gold</span>
-                </div>
-                <div class="metric">
-                  <span class="metric__val">2.3K+</span>
-                  <span class="metric__lbl">Network</span>
-                </div>
-              </div>
-
-              <div class="about__tags-list">
-                <span class="chip chip--accent">Agentic AI</span>
-                <span class="chip chip--accent">MCP</span>
-                <span class="chip chip--accent">RAG</span>
-                <span class="chip chip--accent">FastAPI</span>
-                <span class="chip chip--accent">React</span>
-              </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Programming Languages -->
+        <div class="bg-neutral-800/80 p-6 rounded-xl border border-neutral-700/60 hover:border-blue-500/50 transition-all duration-300">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 bg-blue-600/20 rounded-lg text-blue-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+              </svg>
             </div>
+            <h3 class="text-lg font-bold text-white">Languages</h3>
           </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Python</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">SQL</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Kotlin</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Java</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">C</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">MATLAB</span>
+          </div>
+        </div>
 
-          <div class="about__content">
-            <h2 class="section__heading">Engineering Next-Gen <span class="gradient-text">Intelligent Systems</span></h2>
-            <p class="lead-text">
-              I am a Computer Science graduate from <strong>Vivekananda Institute of Professional Studies, Delhi (2025)</strong>, specializing in Industrial Internet of Things and Artificial Intelligence.
-            </p>
-            <p>
-              My expertise spans developing autonomous multi-agent workflows, context-aware MCP servers, enterprise RAG query assistants, and LLM-powered evaluation pipelines. Over the past year, I have engineered AI solutions that directly improve educational outcomes, automate complex data pipelines, and cut query processing times across fast-growing tech companies.
-            </p>
-
-            <div class="about__features">
-              <div class="feature-card">
-                <div class="feature-card__icon"><i class="fa-solid fa-robot"></i></div>
-                <div>
-                  <h4>Autonomous Agents &amp; MCP</h4>
-                  <p>Building Model Context Protocol tooling and multi-agent coordination for structured decisions.</p>
-                </div>
-              </div>
-              <div class="feature-card">
-                <div class="feature-card__icon"><i class="fa-solid fa-database"></i></div>
-                <div>
-                  <h4>RAG &amp; Vector Pipelines</h4>
-                  <p>Enterprise data retrieval, automated SQL generation, and context-grounded intelligence.</p>
-                </div>
-              </div>
-              <div class="feature-card">
-                <div class="feature-card__icon"><i class="fa-solid fa-cloud"></i></div>
-                <div>
-                  <h4>Cloud &amp; Microservices</h4>
-                  <p>Deploying production pipelines on AWS, GCP, Databricks, Docker, and scalable APIs.</p>
-                </div>
-              </div>
+        <!-- AI/ML & LLM Frameworks -->
+        <div class="bg-neutral-800/80 p-6 rounded-xl border border-neutral-700/60 hover:border-blue-500/50 transition-all duration-300">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 bg-blue-600/20 rounded-lg text-blue-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
             </div>
+            <h3 class="text-lg font-bold text-white">GenAI &amp; Frameworks</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">LangChain</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Llama-Index</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">AutoGen</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">MCP</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">PyTorch</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">TensorFlow</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Hugging Face</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">ReactJS</span>
+          </div>
+        </div>
 
-            <div class="about__actions">
-              <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" class="btn btn--primary">
-                <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
-              </a>
-              <a href="#contact" class="btn btn--outline">
-                <i class="fa-solid fa-paper-plane"></i> Discuss an Opportunity
-              </a>
+        <!-- Databases & Cloud -->
+        <div class="bg-neutral-800/80 p-6 rounded-xl border border-neutral-700/60 hover:border-blue-500/50 transition-all duration-300">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 bg-blue-600/20 rounded-lg text-blue-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+              </svg>
             </div>
+            <h3 class="text-lg font-bold text-white">Databases &amp; Cloud</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">PostgreSQL</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">MySQL</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">AWS</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">GCP</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Azure</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Databricks</span>
+          </div>
+        </div>
+
+        <!-- Tools & Software -->
+        <div class="bg-neutral-800/80 p-6 rounded-xl border border-neutral-700/60 hover:border-blue-500/50 transition-all duration-300">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="p-2.5 bg-blue-600/20 rounded-lg text-blue-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-white">Tools &amp; Systems</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Docker</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Git</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Postman</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">FFMPEG</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Sora &amp; Veo</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Tableau</span>
+            <span class="px-3 py-1.5 bg-neutral-700/60 hover:bg-blue-600/30 text-neutral-200 text-xs font-medium rounded-md transition-colors">Power BI</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section></element><element id="88d11999-1d1d-4d80-b825-7e7708d4e091" data-section-id="88d11999-1d1d-4d80-b825-7e7708d4e091">
 
-    <!-- ── Experience ── -->
-    <section class="section experience" id="experience">
-      <div class="container">
-        <div class="section__tag">02 // CAREER TIMELINE</div>
-        <h2 class="section__heading">Professional <span class="gradient-text">Experience</span></h2>
-        <p class="section__sub">Real-world impact across AI software engineering, GenAI research, and data systems.</p>
+<section id="experience" class="py-20 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Professional Experience</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      </div>
 
-        <div class="timeline">
+      <div class="relative">
+        <!-- Timeline central line -->
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-blue-200"></div>
 
+        <div class="space-y-12">
           <!-- Magicbook Technologies -->
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__header">
-                <div>
-                  <div class="timeline__badge">Current Position</div>
-                  <h3>AI Software Engineer</h3>
-                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Magicbook Technologies · Remote, Portugal</span>
-                </div>
-                <span class="timeline__period">May 2025 – Present</span>
-              </div>
-              <ul class="timeline__bullets">
-                <li>Designing and refining autonomous AI agents to enhance student learning through interactive quizzes and tailored, personalised learning paths.</li>
-                <li>Architected structured grading systems (e.g. for official ENEM essay evaluation) strictly aligned with certified evaluation rubrics.</li>
-                <li>Achieved a <strong>90% verified improvement in student writing scores</strong> through automated, iterative agent feedback loops.</li>
-                <li>Developing high-efficiency LLM-powered tools converting raw notebook inputs into interactive, multimodal study aids.</li>
-              </ul>
-              <div class="timeline__stack">
-                <span class="chip">LLMs</span>
-                <span class="chip">AI Agents</span>
-                <span class="chip">Rubric Evaluation</span>
-                <span class="chip">Python</span>
-                <span class="chip">Prompt Eng</span>
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+              <div class="bg-white p-6 rounded-xl shadow-md border border-neutral-200/80 hover:shadow-lg transition-all duration-300">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-2">May 2025 - Present</span>
+                <h3 class="text-xl font-bold text-neutral-900">AI Software Engineer</h3>
+                <h4 class="text-sm font-semibold text-blue-600 mb-3">Magicbook Technologies</h4>
+                <ul class="text-sm text-neutral-600 space-y-2 text-left md:text-right">
+                  <li>• Designing and refining autonomous AI agents to enhance student learning through interactive quizzes and personalised learning paths.</li>
+                  <li>• Building structured grading systems (e.g. for ENEM essay evaluation) strictly aligned with official grading rubrics.</li>
+                  <li>• Achieved a 90% improvement in student writing scores through targeted interactive AI feedback mechanisms.</li>
+                  <li>• Developing LLM-powered tools that transform complex notebook inputs into interactive study aids and quizzes.</li>
+                </ul>
               </div>
             </div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-10 w-9 h-9 rounded-full bg-blue-600 text-white items-center justify-center font-bold text-sm shadow">1</div>
+            <div class="w-full md:w-1/2 md:pl-12"></div>
           </div>
 
           <!-- Inventic AI -->
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__header">
-                <div>
-                  <h3>AI Engineer Intern</h3>
-                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Inventic AI · Remote, Bengaluru</span>
-                </div>
-                <span class="timeline__period">Mar 2025 – May 2025</span>
-              </div>
-              <ul class="timeline__bullets">
-                <li>Designed AI-driven autonomous agents to streamline fintech operational processes and elevate customer engagement.</li>
-                <li>Built <strong>MCP-based (Model Context Protocol)</strong> models enabling real-time contextual decision-making and actionable analytical insights.</li>
-                <li>Enhanced client customer profiling and predictive analytics systems for financial services stakeholders.</li>
-              </ul>
-              <div class="timeline__stack">
-                <span class="chip">MCP Architecture</span>
-                <span class="chip">Fintech AI</span>
-                <span class="chip">Python</span>
-                <span class="chip">Context Engines</span>
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 md:pr-12"></div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-10 w-9 h-9 rounded-full bg-blue-600 text-white items-center justify-center font-bold text-sm shadow">2</div>
+            <div class="w-full md:w-1/2 md:pl-12 mb-6 md:mb-0">
+              <div class="bg-white p-6 rounded-xl shadow-md border border-neutral-200/80 hover:shadow-lg transition-all duration-300">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-2">Mar 2025 - May 2025</span>
+                <h3 class="text-xl font-bold text-neutral-900">AI Engineer Intern</h3>
+                <h4 class="text-sm font-semibold text-blue-600 mb-3">Inventic AI</h4>
+                <ul class="text-sm text-neutral-600 space-y-2 text-left">
+                  <li>• Designed AI-driven agents to streamline fintech processes and boost customer engagement.</li>
+                  <li>• Built MCP (Model Context Protocol) based models enabling contextual decision-making and actionable insights.</li>
+                  <li>• Enhanced customer profiling and analytics pipelines for financial services clients.</li>
+                </ul>
               </div>
             </div>
           </div>
 
           <!-- Nikah Forever -->
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__header">
-                <div>
-                  <h3>Data Analyst Intern</h3>
-                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Nikah Forever · Okhla, Delhi</span>
-                </div>
-                <span class="timeline__period">Jan 2025 – Apr 2025</span>
-              </div>
-              <ul class="timeline__bullets">
-                <li>Engineered a <strong>RAG-based AI assistant</strong> to automate dynamic SQL generation, cutting analyst query turnaround time by <strong>40%</strong>.</li>
-                <li>Integrated cloud storage and processing pipelines across AWS, GCP, and Databricks for reliable data aggregation at scale.</li>
-                <li>Empowered executive leadership with real-time analytics dashboards powered by AI-backed metrics and anomaly signals.</li>
-              </ul>
-              <div class="timeline__stack">
-                <span class="chip">RAG Assistant</span>
-                <span class="chip">AWS &amp; GCP</span>
-                <span class="chip">Databricks</span>
-                <span class="chip">SQL Automation</span>
-                <span class="chip">BI Dashboards</span>
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 md:pr-12 md:text-right mb-6 md:mb-0">
+              <div class="bg-white p-6 rounded-xl shadow-md border border-neutral-200/80 hover:shadow-lg transition-all duration-300">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-2">Jan 2025 - Apr 2025</span>
+                <h3 class="text-xl font-bold text-neutral-900">Data Analyst Intern</h3>
+                <h4 class="text-sm font-semibold text-blue-600 mb-3">Nikah Forever</h4>
+                <ul class="text-sm text-neutral-600 space-y-2 text-left md:text-right">
+                  <li>• Created a RAG-based AI assistant to automate SQL generation, cutting analyst query time by 40%.</li>
+                  <li>• Integrated multi-cloud platforms (AWS, GCP) and Databricks for scalable data pipeline processing.</li>
+                  <li>• Empowered leadership with real-time KPI dashboards and predictive metrics using AI-backed analytics.</li>
+                </ul>
               </div>
             </div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-10 w-9 h-9 rounded-full bg-blue-600 text-white items-center justify-center font-bold text-sm shadow">3</div>
+            <div class="w-full md:w-1/2 md:pl-12"></div>
           </div>
 
           <!-- Zummit Infolabs -->
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__card">
-              <div class="timeline__header">
-                <div>
-                  <h3>Gen AI Intern</h3>
-                  <span class="timeline__company"><i class="fa-solid fa-building"></i> Zummit Infolabs · Remote, Bengaluru</span>
-                </div>
-                <span class="timeline__period">Oct 2024 – Jan 2025</span>
-              </div>
-              <ul class="timeline__bullets">
-                <li>Developed production NLP conversational chatbots, reducing client customer response wait times by <strong>30%</strong>.</li>
-                <li>Streamlined internal development and operational workflows through automation scripts and model pipelines.</li>
-                <li>Collaborated on robust containerized model deployments, maintaining <strong>95% uptime</strong> across live use cases.</li>
-              </ul>
-              <div class="timeline__stack">
-                <span class="chip">GenAI</span>
-                <span class="chip">NLP Chatbots</span>
-                <span class="chip">Python</span>
-                <span class="chip">Docker</span>
+          <div class="relative flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 md:pr-12"></div>
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 z-10 w-9 h-9 rounded-full bg-blue-600 text-white items-center justify-center font-bold text-sm shadow">4</div>
+            <div class="w-full md:w-1/2 md:pl-12">
+              <div class="bg-white p-6 rounded-xl shadow-md border border-neutral-200/80 hover:shadow-lg transition-all duration-300">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-800 text-xs font-semibold rounded-full mb-2">Oct 2024 - Jan 2025</span>
+                <h3 class="text-xl font-bold text-neutral-900">Gen AI Intern</h3>
+                <h4 class="text-sm font-semibold text-blue-600 mb-3">Zummit Infolabs</h4>
+                <ul class="text-sm text-neutral-600 space-y-2 text-left">
+                  <li>• Developed an enterprise NLP chatbot, reducing customer query response time by 30%.</li>
+                  <li>• Streamlined internal operations and ETL workflows through automation, boosting efficiency.</li>
+                  <li>• Collaborated on robust model deployments achieving 95% uptime across customer use cases.</li>
+                </ul>
               </div>
             </div>
           </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Projects ── -->
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section__tag">03 // FEATURED WORK</div>
-        <h2 class="section__heading">Selected <span class="gradient-text">Projects</span></h2>
-        <p class="section__sub">Systems demonstrating expertise in MCP, Multimodal Generative AI, RAG, and Computer Vision.</p>
-
-        <div class="projects__grid">
-
-          <!-- Project 1: MySQL MCP -->
-          <article class="project-card project-card--featured">
-            <div class="project-card__visual visual-mcp">
-              <div class="code-preview">
-                <div class="code-preview__header">
-                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                  <span class="code-preview__title">mysql-mcp-agent.py</span>
-                </div>
-                <pre class="code-preview__body"><code>@mcp.tool()
-def query_business_analytics(prompt: str):
-    schema = db.introspect()
-    sql = llm.generate_sql(prompt, schema)
-    return db.execute_safe(sql)</code></pre>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="chip">2024</span>
-                <span class="chip">Model Context Protocol</span>
-                <span class="chip">MySQL</span>
-                <span class="chip">Python</span>
-                <span class="chip">LLMs</span>
-              </div>
-              <h3>MySQL MCP System for Business Analytics</h3>
-              <p>Constructed an enterprise context-aware database querying system utilizing LLMs and the Model Context Protocol (MCP) for dynamic business intelligence. Allows natural language interrogation of relational schemas with guardrails, query validation, and automated execution.</p>
-              <div class="project-card__highlights">
-                <span><i class="fa-solid fa-check"></i> Context-aware schema introspection</span>
-                <span><i class="fa-solid fa-check"></i> High-accuracy NL-to-SQL translation</span>
-              </div>
-              <div class="project-card__links">
-                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">View on GitHub →</a>
-                <a href="#api-hub" class="link-arrow text-secondary">Try Live API Demo →</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: Personalized Educational Reels -->
-          <article class="project-card">
-            <div class="project-card__visual visual-video">
-              <div class="visual-badge"><i class="fa-solid fa-video"></i> Multimodal GenAI</div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="chip">2025</span>
-                <span class="chip">Generative AI</span>
-                <span class="chip">Computer Vision</span>
-                <span class="chip">Multimodal LLMs</span>
-              </div>
-              <h3>Personalized Educational Reels System</h3>
-              <p>An innovative generative system creating short educational video reels for children using images of their own toys, sketches, and drawings as primary visual inputs. Uses multimodal models to generate pedagogically aligned narratives (alphabets, numbers, science).</p>
-              <div class="project-card__links">
-                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Repository →</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Two-Layer OCR Intelligence Pipeline -->
-          <article class="project-card">
-            <div class="project-card__visual visual-ocr">
-              <div class="visual-badge"><i class="fa-solid fa-file-code"></i> OCR + LaTeX</div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="chip">2025</span>
-                <span class="chip">Python</span>
-                <span class="chip">Open-Source LLMs</span>
-                <span class="chip">LaTeX</span>
-              </div>
-              <h3>Two-Layer OCR Intelligence Pipeline for Notes</h3>
-              <p>End-to-end post-processing system for scanned handwritten academic notes. Layer 1 cleans artifacts and removes contextual noise. Layer 2 translates notes into publication-grade LaTeX formulas, diagrams, and structures preserving original intent.</p>
-              <div class="project-card__links">
-                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Repository →</a>
-                <a href="#api-hub" class="link-arrow text-secondary">Test Tool →</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: AI Cold Email Outreach -->
-          <article class="project-card">
-            <div class="project-card__visual visual-email">
-              <div class="visual-badge"><i class="fa-solid fa-paper-plane"></i> AI Agents</div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="chip">2024</span>
-                <span class="chip">Python</span>
-                <span class="chip">Open-Source LLMs</span>
-                <span class="chip">Agent Automation</span>
-              </div>
-              <h3>AI-Powered Cold Email Outreach Tool</h3>
-              <p>Automated hyper-personalized outbound email outreach using LLM agents that research recipient profiles, tailor value propositions, and align communication style to email marketing context, maximizing conversion rates.</p>
-              <div class="project-card__links">
-                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Repository →</a>
-                <a href="#api-hub" class="link-arrow text-secondary">Test Email Generator →</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 5: Blood Cancer Detection -->
-          <article class="project-card">
-            <div class="project-card__visual visual-med">
-              <div class="visual-badge"><i class="fa-solid fa-microscope"></i> Medical CV</div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="chip">Computer Vision</span>
-                <span class="chip">PyTorch</span>
-                <span class="chip">Healthcare</span>
-              </div>
-              <h3>Blood Cancer Detection &amp; Diagnostics</h3>
-              <p>Deep learning diagnostic tool utilizing convolutional computer vision architectures to identify and classify malignant cell anomalies from microscopic blood smear samples with high sensitivity.</p>
-              <div class="project-card__links">
-                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="link-arrow">Project Details →</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Skills ── -->
-    <section class="section skills" id="skills">
-      <div class="container">
-        <div class="section__tag">04 // TECHNICAL EXPERTISE</div>
-        <h2 class="section__heading text-center">Skills &amp; <span class="gradient-text">Technologies</span></h2>
-        <p class="section__sub text-center">Technologies, frameworks, and developer tools battle-tested in production.</p>
-
-        <div class="skills__categories">
-          <button class="skills__tab active" data-cat="all">All Stack</button>
-          <button class="skills__tab" data-cat="languages">Languages</button>
-          <button class="skills__tab" data-cat="ai">AI / GenAI / LLM</button>
-          <button class="skills__tab" data-cat="data">Data &amp; Cloud</button>
-          <button class="skills__tab" data-cat="tools">Tools &amp; DevOps</button>
-        </div>
-
-        <div class="skills__grid" id="skillsGrid">
-          <!-- Populated dynamically by main.js with all user skills from PDF resume -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Live Internal APIs & Developer Hub ── -->
-    <section class="section api-hub" id="api-hub">
-      <div class="container">
-        <div class="section__tag">05 // LIVE INTERNAL APIS &amp; UTILITIES</div>
-        <div class="api-hub__header">
-          <div>
-            <h2 class="section__heading">Internal APIs &amp; <span class="gradient-text">Developer Tools</span></h2>
-            <p class="section__sub" style="margin-inline: 0; text-align: left;">
-              Interactive sandbox demonstrating the internal API endpoints and tools built for my personal workflow and portfolio automation.
-            </p>
-          </div>
-          <div class="api-hub__mode-toggle">
-            <span class="mode-label">API Mode:</span>
-            <span class="badge-mode active" id="apiModeBadge"><i class="fa-solid fa-circle-check"></i> Live Interactive Ready</span>
-          </div>
-        </div>
-
-        <div class="api-hub__layout">
-          <!-- Left: Tool Selector -->
-          <div class="api-hub__nav">
-            <button class="api-tab-btn active" data-tool="sql">
-              <i class="fa-solid fa-database"></i>
-              <div>
-                <strong>Natural Language to SQL</strong>
-                <span>Context-aware RAG / MCP Query API</span>
-              </div>
-            </button>
-            <button class="api-tab-btn" data-tool="email">
-              <i class="fa-solid fa-envelope-open-text"></i>
-              <div>
-                <strong>Cold Outreach AI Generator</strong>
-                <span>Tailored email generation API</span>
-              </div>
-            </button>
-            <button class="api-tab-btn" data-tool="latex">
-              <i class="fa-solid fa-square-root-variable"></i>
-              <div>
-                <strong>OCR to LaTeX Formatter</strong>
-                <span>2-Layer academic note cleaner</span>
-              </div>
-            </button>
-            <button class="api-tab-btn" data-tool="eval">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <div>
-                <strong>Essay Rubric Evaluator</strong>
-                <span>ENEM-style rubric scoring API</span>
-              </div>
-            </button>
-          </div>
-
-          <!-- Right: Interactive Console -->
-          <div class="api-hub__console">
-            <div class="console-header">
-              <div class="console-endpoint">
-                <span class="http-badge post">POST</span>
-                <span class="endpoint-path" id="endpointPath">/api/v1/sql/generate</span>
-              </div>
-              <button class="btn btn--xs btn--outline" id="copyEndpointBtn"><i class="fa-regular fa-copy"></i> Copy Path</button>
-            </div>
-
-            <!-- Panel 1: NL to SQL -->
-            <div class="console-panel active" id="panel-sql">
-              <div class="form-group">
-                <label>Natural Language Business Request:</label>
-                <input type="text" id="sqlInput" class="input-modern" value="Find top 5 customers with highest revenue and total orders placed in 2024" />
-              </div>
-              <div class="console-actions">
-                <button class="btn btn--primary btn--sm" id="runSqlBtn"><i class="fa-solid fa-play"></i> Execute API Call</button>
-                <span class="api-latency" id="sqlLatency">Latency: ~45ms</span>
-              </div>
-              <div class="console-output">
-                <div class="console-output__title">JSON Response:</div>
-                <pre><code id="sqlOutput">{
-  "status": "success",
-  "prompt": "Find top 5 customers with highest revenue and total orders placed in 2024",
-  "generated_sql": "SELECT c.id, c.name, SUM(o.total_amount) AS revenue, COUNT(o.id) AS orders_count\nFROM customers c\nJOIN orders o ON c.id = o.customer_id\nWHERE YEAR(o.created_at) = 2024\nGROUP BY c.id, c.name\nORDER BY revenue DESC\nLIMIT 5;",
-  "execution_plan": "Indexed Index Scan on orders.created_at (Estimated rows: 1420)",
-  "mcp_context_applied": true
-}</code></pre>
-              </div>
-            </div>
-
-            <!-- Panel 2: Email Outreach -->
-            <div class="console-panel" id="panel-email">
-              <div class="form-group">
-                <label>Prospect Name &amp; Company / Role:</label>
-                <input type="text" id="emailInput" class="input-modern" value="Alex Rivera, VP of Engineering at ScaleAI" />
-              </div>
-              <div class="console-actions">
-                <button class="btn btn--primary btn--sm" id="runEmailBtn"><i class="fa-solid fa-paper-plane"></i> Generate Outreach</button>
-                <span class="api-latency" id="emailLatency">Latency: ~60ms</span>
-              </div>
-              <div class="console-output">
-                <div class="console-output__title">Generated Email Response:</div>
-                <pre><code id="emailOutput">{
-  "status": "success",
-  "subject": "Supercharging Agentic MCP Workflows at ScaleAI",
-  "body": "Hi Alex,\n\nI noticed ScaleAI's recent push into autonomous evaluation benchmarks. At Magicbook Technologies and Inventic AI, I've spent the past year architecting MCP-based agent systems and automated rubric grading engines that reduced latency by 40% and improved evaluation precision.\n\nWould you be open to a 10-minute chat this Thursday to swap ideas on multi-agent context grounding?\n\nBest,\nVaibhav Wadhwa\ngithub.com/Vwadhwa02"
-}</code></pre>
-              </div>
-            </div>
-
-            <!-- Panel 3: LaTeX Formatter -->
-            <div class="console-panel" id="panel-latex">
-              <div class="form-group">
-                <label>Raw OCR Scanned Expression / Text:</label>
-                <input type="text" id="latexInput" class="input-modern" value="integral from 0 to inf of e^(-x^2) dx = sqrt(pi)/2" />
-              </div>
-              <div class="console-actions">
-                <button class="btn btn--primary btn--sm" id="runLatexBtn"><i class="fa-solid fa-code"></i> Format with Layer 2</button>
-              </div>
-              <div class="console-output">
-                <div class="console-output__title">Formatted LaTeX Output:</div>
-                <pre><code id="latexOutput">{
-  "status": "success",
-  "layer1_denoised": "integral from 0 to infinity of exp(-x^2) dx = sqrt(pi) / 2",
-  "layer2_latex": "\\int_{0}^{\\infty} e^{-x^2} \\, dx = \\frac{\\sqrt{\\pi}}{2}",
-  "math_render_preview": "∫ [0 to ∞] e^(-x²) dx = √π / 2"
-}</code></pre>
-              </div>
-            </div>
-
-            <!-- Panel 4: Essay Rubric Evaluator -->
-            <div class="console-panel" id="panel-eval">
-              <div class="form-group">
-                <label>Essay Snippet / Thesis for Rubric Scoring:</label>
-                <input type="text" id="evalInput" class="input-modern" value="A inclusão digital é fundamental no combate às desigualdades contemporâneas no acesso ao conhecimento." />
-              </div>
-              <div class="console-actions">
-                <button class="btn btn--primary btn--sm" id="runEvalBtn"><i class="fa-solid fa-chart-line"></i> Run Rubric Evaluation</button>
-              </div>
-              <div class="console-output">
-                <div class="console-output__title">Rubric Assessment Breakdown:</div>
-                <pre><code id="evalOutput">{
-  "status": "scored",
-  "competencies": {
-    "C1_grammar_mechanics": 180,
-    "C2_theme_comprehension": 200,
-    "C3_argumentation_structure": 190,
-    "C4_cohesion_mechanisms": 180,
-    "C5_intervention_proposal": 170
-  },
-  "total_score": 920,
-  "max_score": 1000,
-  "feedback": "Strong topical defense. Recommendation: augment intervention proposal with concrete institutional executing agent."
-}</code></pre>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Education & Achievements ── -->
-    <section class="section achievements" id="achievements">
-      <div class="container">
-        <div class="section__tag">06 // CREDENTIALS &amp; HONORS</div>
-        <h2 class="section__heading">Education &amp; <span class="gradient-text">Achievements</span></h2>
-        <p class="section__sub">Academic foundation, competitive milestones, and leadership initiatives.</p>
-
-        <div class="credentials-grid">
-
-          <!-- Education Card -->
-          <div class="card-credential">
-            <div class="card-credential__header">
-              <span class="cred-icon"><i class="fa-solid fa-graduation-cap"></i></span>
-              <div>
-                <h3>Education</h3>
-                <span>Academic Record</span>
-              </div>
-            </div>
-            <div class="cred-list">
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>B.Tech., CSE (IIoT)</strong>
-                  <span class="cred-year">2021 – 2025</span>
-                </div>
-                <p class="cred-sub">Vivekananda Institute of Professional Studies, Delhi</p>
-                <span class="badge-grade">Score: 82.5% (8.25 CGPA)</span>
-              </div>
-
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>Senior Secondary (CBSE Class XII)</strong>
-                  <span class="cred-year">2021</span>
-                </div>
-                <p class="cred-sub">Happy Home Public School, Delhi</p>
-                <span class="badge-grade">Score: 87%</span>
-              </div>
-
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>Secondary School (CBSE Class X)</strong>
-                  <span class="cred-year">2019</span>
-                </div>
-                <p class="cred-sub">Happy Home Public School, Delhi</p>
-                <span class="badge-grade">Score: 89%</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Honors & Awards -->
-          <div class="card-credential">
-            <div class="card-credential__header">
-              <span class="cred-icon"><i class="fa-solid fa-trophy"></i></span>
-              <div>
-                <h3>Key Honors &amp; Awards</h3>
-                <span>Recognitions &amp; Publications</span>
-              </div>
-            </div>
-            <div class="cred-list">
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>Best Paper Award (2024)</strong>
-                </div>
-                <p class="cred-desc">"AI-based Computational Analysis of Shreemad Bhagwad Geeta" — computational NLP research parsing spiritual classical manuscripts.</p>
-              </div>
-
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>HackerRank Gold Badges</strong>
-                </div>
-                <p class="cred-desc">Earned Gold in <strong>Python, SQL, and Problem Solving</strong> (Ranked in Top 1% globally).</p>
-              </div>
-
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>3x Hackathon Winner</strong>
-                </div>
-                <p class="cred-desc">Secured first place in AI-driven waste classification &amp; crop disease detection computer vision hackathons.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Leadership & Social Responsibility -->
-          <div class="card-credential">
-            <div class="card-credential__header">
-              <span class="cred-icon"><i class="fa-solid fa-users"></i></span>
-              <div>
-                <h3>Leadership &amp; Clubs</h3>
-                <span>Student Community Management</span>
-              </div>
-            </div>
-            <div class="cred-list">
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>Management Head — Srijan Club</strong>
-                  <span class="cred-year">2022 – 2023</span>
-                </div>
-                <p class="cred-desc">Spearheaded 15+ student social welfare drives and raised <strong>Rs. 5,00,000+ in donations</strong> involving 2,000+ students.</p>
-              </div>
-
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>Management Head — Kavyarang Club</strong>
-                  <span class="cred-year">2023 – 2024</span>
-                </div>
-                <p class="cred-desc">Organized 12+ university literary festivals and events, increasing overall attendee outreach by 40%.</p>
-              </div>
-
-              <div class="cred-item">
-                <div class="cred-item__top">
-                  <strong>IBM &amp; HackerRank Certifications</strong>
-                </div>
-                <p class="cred-desc">NodeJS, Deep Learning Fundamentals, Python for Data Science, Advanced SQL, and REST APIs.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Contact ── -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section__tag">07 // CONTACT</div>
-        <h2 class="section__heading text-center">Let's <span class="gradient-text">Build Something Great</span></h2>
-        <p class="section__sub text-center">Open to AI Software Engineering, GenAI/LLM roles, consulting, or technical collaborations.</p>
-
-        <div class="contact__grid">
-          <div class="contact__info">
-            <h3>Get In Touch</h3>
-            <p>
-              Feel free to reach out directly via email, phone, or LinkedIn. I respond quickly to inquiries regarding engineering positions, agentic systems, or technical inquiries.
-            </p>
-
-            <div class="contact__channels">
-              <a href="mailto:vwadhwa02@gmail.com" class="contact__channel">
-                <span class="contact__channel-icon"><i class="fa-solid fa-envelope"></i></span>
-                <div>
-                  <strong>Primary Email</strong>
-                  <span>vwadhwa02@gmail.com</span>
-                </div>
-              </a>
-
-              <a href="tel:+919311114563" class="contact__channel">
-                <span class="contact__channel-icon"><i class="fa-solid fa-phone"></i></span>
-                <div>
-                  <strong>Direct Phone / WhatsApp</strong>
-                  <span>+91 93111 14563</span>
-                </div>
-              </a>
-
-              <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" class="contact__channel">
-                <span class="contact__channel-icon"><i class="fa-brands fa-linkedin-in"></i></span>
-                <div>
-                  <strong>LinkedIn</strong>
-                  <span>linkedin.com/in/vwadhwa02</span>
-                </div>
-              </a>
-
-              <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" class="contact__channel">
-                <span class="contact__channel-icon"><i class="fa-brands fa-github"></i></span>
-                <div>
-                  <strong>GitHub</strong>
-                  <span>github.com/Vwadhwa02</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <form class="contact__form" id="contactForm" novalidate>
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Sarah Connor" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Your Email</label>
-              <input type="email" id="email" name="email" placeholder="sarah@company.com" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject / Purpose</label>
-              <input type="text" id="subject" name="subject" placeholder="Opportunity @ Tech / Collaboration" />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Hi Vaibhav, I'd like to discuss..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full">
-              <span class="btn__text">Send Message</span>
-              <span class="btn__icon"><i class="fa-solid fa-paper-plane"></i></span>
-            </button>
-            <div class="form-status" id="formStatus" aria-live="polite"></div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ── Footer ── -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <a href="#hero" class="nav__logo">
-          <span class="nav__logo-symbol">&lt;VW/&gt;</span>
-          <span class="nav__logo-name">Vaibhav Wadhwa</span>
-        </a>
-        <p>Built with modern standards by <strong>Vaibhav Wadhwa</strong> · 2025</p>
-        <div class="footer__socials">
-          <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://linkedin.com/in/vwadhwa02" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="mailto:vwadhwa02@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </div>
+  </section></element><element id="28677266-3a60-4a17-ac0b-96f4d58a49ef" data-section-id="28677266-3a60-4a17-ac0b-96f4d58a49ef">
+
+<section id="projects" class="py-20 bg-neutral-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+      <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1: MySQL MCP System -->
+      <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-500 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">MySQL MCP System for Business Analytics</h3>
+          <p class="text-neutral-400 text-sm mb-4">
+            Constructed a context-aware querying system using LLMs and the Model Context Protocol (MCP) for dynamic business intelligence and automated SQL execution.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">MCP</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">LLMs</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">MySQL</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Python</span>
+          </div>
+        </div>
+        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 inline-flex items-center text-sm font-semibold">
+          View on GitHub
+          <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Project 2: AI Cold Email Outreach -->
+      <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-500 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">AI Cold Email Outreach Tool</h3>
+          <p class="text-neutral-400 text-sm mb-4">
+            Autonomous agentic campaign pipeline utilizing LLMs to synthesize client background and craft personalized, high-conversion outbound communications.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">AI Agents</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">LangChain</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Automation</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Python</span>
+          </div>
+        </div>
+        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 inline-flex items-center text-sm font-semibold">
+          View on GitHub
+          <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Project 3: Educational Reels from Toys -->
+      <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-500 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">AI Educational Reels Generator</h3>
+          <p class="text-neutral-400 text-sm mb-4">
+            Multimodal LLM video reel generation system that creates short, engaging educational stories for children using images of their own toys, sketches, and drawings.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Multimodal LLM</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Veo / Sora</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">FFMPEG</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">GenAI</span>
+          </div>
+        </div>
+        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 inline-flex items-center text-sm font-semibold">
+          View on GitHub
+          <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Project 4: Two-Layer OCR Pipeline -->
+      <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-500 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Two-Layer OCR Academic Notes Pipeline</h3>
+          <p class="text-neutral-400 text-sm mb-4">
+            Two-stage OCR intelligence pipeline for handwritten notes: context-aware noise removal and error correction, followed by precise LaTeX digital recreation.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Computer Vision</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">OCR</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">LaTeX</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Python</span>
+          </div>
+        </div>
+        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 inline-flex items-center text-sm font-semibold">
+          View on GitHub
+          <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Project 5: Blood Cancer Detection -->
+      <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-500 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Blood Cancer Detection via CV</h3>
+          <p class="text-neutral-400 text-sm mb-4">
+            Deep-learning diagnostic tool for blood cancer detection using Computer Vision, microscopic smear cell classification, and an interactive clinical web interface.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">PyTorch</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">CNN</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Healthcare AI</span>
+          </div>
+        </div>
+        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 inline-flex items-center text-sm font-semibold">
+          View on GitHub
+          <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Project 6: RAG SQL Analytics Assistant -->
+      <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300 flex flex-col justify-between">
+        <div>
+          <div class="text-blue-500 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-2">RAG SQL Assistant &amp; Analytics</h3>
+          <p class="text-neutral-400 text-sm mb-4">
+            Intelligent enterprise assistant translating natural language questions into optimized SQL queries across Databricks and cloud databases, speeding data retrieval by 40%.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">RAG</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">PostgreSQL</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">Databricks</span>
+            <span class="px-2 py-0.5 bg-neutral-700/60 text-blue-300 text-xs rounded">AWS/GCP</span>
+          </div>
+        </div>
+        <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 inline-flex items-center text-sm font-semibold">
+          View on GitHub
+          <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section></element><element id="8325d8e2-a509-4b53-9704-744124516be7" data-section-id="8325d8e2-a509-4b53-9704-744124516be7">
+
+<section id="education" class="py-20 bg-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Education</h2>
+      <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+    </div>
+
+    <div class="space-y-8 max-w-4xl mx-auto">
+      <!-- B.Tech -->
+      <div class="bg-white rounded-xl shadow-md p-8 border border-neutral-200 hover:shadow-lg transition-all duration-300">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+          <div>
+            <h3 class="text-2xl font-bold text-neutral-900">Guru Gobind Singh Indraprastha University</h3>
+            <p class="text-lg text-blue-600 font-medium">Vivekananda Institute of Professional Studies (VIPS)</p>
+          </div>
+          <div class="mt-2 md:mt-0">
+            <span class="bg-blue-100 text-blue-800 px-3.5 py-1.5 rounded-full text-xs font-semibold">Jul 2021 - Jun 2025</span>
+          </div>
+        </div>
+        <div class="space-y-2 text-neutral-700">
+          <p><span class="font-semibold text-neutral-900">Degree:</span> Bachelor of Technology (B.Tech.), Computer Science (IIoT)</p>
+          <p><span class="font-semibold text-neutral-900">Academic Score:</span> 82.5% GPA (8.25 CGPA)</p>
+          <p><span class="font-semibold text-neutral-900">Focus Areas:</span> Artificial Intelligence, Large Language Models, Distributed Cloud Architecture, Industrial IoT</p>
+        </div>
+      </div>
+
+      <!-- Senior Secondary -->
+      <div class="bg-white rounded-xl shadow-md p-6 border border-neutral-200 hover:shadow-lg transition-all duration-300">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
+          <div>
+            <h3 class="text-xl font-bold text-neutral-900">Senior Secondary Examination (Class XII)</h3>
+            <p class="text-md text-blue-600 font-medium">Happy Home Public School (CBSE)</p>
+          </div>
+          <div class="mt-2 md:mt-0">
+            <span class="bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full text-xs font-semibold">May 2021</span>
+          </div>
+        </div>
+        <p class="text-neutral-600 text-sm"><span class="font-semibold">Score:</span> 86%</p>
+      </div>
+
+      <!-- Secondary -->
+      <div class="bg-white rounded-xl shadow-md p-6 border border-neutral-200 hover:shadow-lg transition-all duration-300">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
+          <div>
+            <h3 class="text-xl font-bold text-neutral-900">Secondary Examination (Class X)</h3>
+            <p class="text-md text-blue-600 font-medium">Happy Home Public School (CBSE)</p>
+          </div>
+          <div class="mt-2 md:mt-0">
+            <span class="bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full text-xs font-semibold">June 2019</span>
+          </div>
+        </div>
+        <p class="text-neutral-600 text-sm"><span class="font-semibold">Score:</span> 89%</p>
+      </div>
+    </div>
+  </div>
+</section></element><element id="02a33e1b-52e2-4755-8f79-48f02596260f" data-section-id="02a33e1b-52e2-4755-8f79-48f02596260f">
+
+<section id="achievements" class="py-20 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate__animated animate__fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Achievements</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Best Paper Award -->
+        <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300">
+          <div class="text-blue-500 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Jan 2024</span>
+          <h3 class="text-xl font-bold mt-1 mb-2">Best Paper Award</h3>
+          <p class="text-neutral-400 text-sm">"AI-based computational analysis of Shreemad Bhagwad Geeta" — recognized for excellence in computational NLP analysis on classic literature.</p>
+        </div>
+
+        <!-- HackerRank Gold Badges -->
+        <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300">
+          <div class="text-blue-500 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Top 1% Global</span>
+          <h3 class="text-xl font-bold mt-1 mb-2">HackerRank Gold Badges</h3>
+          <p class="text-neutral-400 text-sm">Awarded Gold Badges across Python, SQL, and Problem Solving on HackerRank, demonstrating advanced data structure & algorithmic mastery.</p>
+        </div>
+
+        <!-- Professional Community & Network -->
+        <div class="bg-neutral-800 rounded-xl p-6 border border-neutral-700/60 hover:border-blue-500/50 hover:transform hover:scale-[1.02] transition-all duration-300">
+          <div class="text-blue-500 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Engineering Community</span>
+          <h3 class="text-xl font-bold mt-1 mb-2">1,800+ Professional Network</h3>
+          <p class="text-neutral-400 text-sm">Active contributor and network of 1,800+ developers, AI researchers, and engineering leads on LinkedIn and GitHub.</p>
+          <div class="mt-4">
+            <a href="https://www.linkedin.com/in/vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 text-sm font-semibold inline-flex items-center">
+              Connect on LinkedIn →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section></element><element id="f5e5f7f9-b949-416a-9c99-c36d71415844" data-section-id="f5e5f7f9-b949-416a-9c99-c36d71415844">
+
+<section id="certifications" class="py-20 bg-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 animate__animated animate__fadeIn">
+      <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Certifications</h2>
+      <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- HackerRank Certifications -->
+      <div class="bg-white rounded-xl shadow-md p-6 border border-neutral-200 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-xl mb-4">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-3">HackerRank Certifications</h3>
+        <ul class="space-y-2 text-sm text-neutral-600">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            SQL (Advanced)
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            Problem Solving (Intermediate)
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            Python (Basic)
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            Java (Basic)
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            REST API (Intermediate)
+          </li>
+        </ul>
+      </div>
+
+      <!-- IBM Professional Certificates -->
+      <div class="bg-white rounded-xl shadow-md p-6 border border-neutral-200 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-xl mb-4">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-3">IBM Professional Certificates</h3>
+        <ul class="space-y-2 text-sm text-neutral-600">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            Deep Learning Fundamentals
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            Machine Learning with Python
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            NodeJS Developer
+          </li>
+        </ul>
+      </div>
+
+      <!-- Cloud & Architecture Simulations -->
+      <div class="bg-white rounded-xl shadow-md p-6 border border-neutral-200 hover:shadow-lg transition-all duration-300">
+        <div class="flex items-center justify-center w-14 h-14 bg-blue-100 text-blue-600 rounded-xl mb-4">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-neutral-900 mb-3">Cloud &amp; Industry Simulations</h3>
+        <ul class="space-y-2 text-sm text-neutral-600">
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            AWS APAC Solution Architect Simulation
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            Artificial Intelligence Engineering 2024-25
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+            IBM SkillsBuild Artificial Intelligence
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mt-12 animate__animated animate__fadeIn">
+      <a href="/portfolio/resume.pdf" download="Vaibhav_Wadhwa_Resume.pdf" target="_blank" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center font-medium shadow-md">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+        </svg>
+        Download Verified Resume &amp; Credentials
+      </a>
+    </div>
+  </div>
+</section></element><element id="57e4ac1b-61c4-4a47-b87f-903d227bf372" data-section-id="57e4ac1b-61c4-4a47-b87f-903d227bf372">
+
+<div id="root">
+  <section id="contact" class="bg-neutral-900 py-16">
+    <div class="max-w-6xl mx-auto px-4" id="el-2j1545h6">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-8" id="el-2qq0ugnl">
+        <div class="w-full md:w-1/2">
+          <div class="bg-neutral-800 rounded-lg p-6 shadow-xl">
+            <h2 class="text-3xl font-bold text-white mb-4">Contact Information</h2>
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <a href="mailto:vwadhwa02@gmail.com" class="text-gray-300 hover:text-blue-500 transition">vwadhwa02@gmail.com</a>
+              </div>
+              
+              <div class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <a href="tel:+919311114563" class="text-gray-300 hover:text-blue-500 transition">+91-9311114563</a>
+              </div>
+
+              <div class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 6.5c1.5 1.5 2.5 3.5 2.5 5.5s-1 4-2.5 5.5-3.5 2.5-5.5 2.5-4-1-5.5-2.5S4 14.5 4 12.5s1-4 2.5-5.5S10 4.5 12 4.5s4 1 5.5 2zM15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <a href="https://www.linkedin.com/in/vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-500 transition">LinkedIn</a>
+              </div>
+
+              <div class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.57.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"></path>
+                </svg>
+                <a href="https://github.com/Vwadhwa02" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-500 transition">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="w-full md:w-1/2">
+          <form class="bg-neutral-800 rounded-lg p-6 shadow-xl">
+            <h2 class="text-3xl font-bold text-white mb-6">Get in Touch</h2>
+            <div class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md bg-neutral-700 border-neutral-600 text-white focus:border-blue-500 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md bg-neutral-700 border-neutral-600 text-white focus:border-blue-500 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md bg-neutral-700 border-neutral-600 text-white focus:border-blue-500 focus:ring-blue-500"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div></element><element id="5ff74405-ef7b-4425-b1da-3ae5bdbee338" data-section-id="5ff74405-ef7b-4425-b1da-3ae5bdbee338">
+
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-white">Vaibhav Wadhwa</h3>
+          <p class="text-sm">Full Stack Developer & AI/ML Engineer</p>
+          <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/vwadhwa02" class="hover:text-blue-500 transition">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/Vwadhwa02" class="hover:text-blue-500 transition">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-white">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#skills" class="hover:text-blue-500 transition">Skills</a></li>
+            <li><a href="#experience" class="hover:text-blue-500 transition">Experience</a></li>
+            <li><a href="#projects" class="hover:text-blue-500 transition">Projects</a></li>
+            <li><a href="#education" class="hover:text-blue-500 transition">Education</a></li>
+            <li><a href="#achievements" class="hover:text-blue-500 transition">Achievements</a></li>
+          </ul>
+        </div>
+        
+        <div class="space-y-4">
+          <h3 class="text-xl font-bold text-white">Contact</h3>
+          <div class="space-y-2">
+            <p class="flex items-center">
+              <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              vwadhwa02@gmail.com
+            </p>
+            <p class="flex items-center">
+              <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+              </svg>
+              +91-9311114563
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-8 pt-8 border-t border-neutral-800">
+        <p class="text-center text-sm">
+          © 2024 Vaibhav Wadhwa. All rights reserved.
+        </p>
+      </div>
+    </div>
   </footer>
-
-  <!-- Back to Top -->
-  <button class="back-top" id="backTop" aria-label="Back to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
-  <script src="main.js"></script>
-</body>
-</html>
+</div></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
