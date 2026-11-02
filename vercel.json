@@ -2,6 +2,18 @@
   "cleanUrls": true,
   "rewrites": [
     {
+      "source": "/tools/self-utils/mirofish",
+      "destination": "/tools/self-utils/mirofish/index.html"
+    },
+    {
+      "source": "/tools/self-utils/mirofish/",
+      "destination": "/tools/self-utils/mirofish/index.html"
+    },
+    {
+      "source": "/tools/self-utils/mirofish/:path*",
+      "destination": "/tools/self-utils/mirofish/index.html"
+    },
+    {
       "source": "/portfolio",
       "destination": "/portfolio/index.html"
     },
