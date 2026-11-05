@@ -3,19 +3,27 @@
   "rewrites": [
     {
       "source": "/tools/self-util/n8n",
-      "destination": "https://n8n-latest-47yj.onrender.com/tools/self-util/n8n"
+      "destination": "https://n8n-latest-47yj.onrender.com/"
+    },
+    {
+      "source": "/tools/self-util/n8n/",
+      "destination": "https://n8n-latest-47yj.onrender.com/"
     },
     {
       "source": "/tools/self-util/n8n/:path*",
-      "destination": "https://n8n-latest-47yj.onrender.com/tools/self-util/n8n/:path*"
+      "destination": "https://n8n-latest-47yj.onrender.com/:path*"
     },
     {
       "source": "/tools/self-utils/n8n",
-      "destination": "https://n8n-latest-47yj.onrender.com/tools/self-util/n8n"
+      "destination": "https://n8n-latest-47yj.onrender.com/"
+    },
+    {
+      "source": "/tools/self-utils/n8n/",
+      "destination": "https://n8n-latest-47yj.onrender.com/"
     },
     {
       "source": "/tools/self-utils/n8n/:path*",
-      "destination": "https://n8n-latest-47yj.onrender.com/tools/self-util/n8n/:path*"
+      "destination": "https://n8n-latest-47yj.onrender.com/:path*"
     },
     {
       "source": "/tools/self-utils/mirofish",
